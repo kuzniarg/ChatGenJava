@@ -3,7 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package GUI;
+package Czat;
+
+import static Czat.Rozmowa.botOdpowiedz;
+import static Czat.Rozmowa.botPrzywitanie;
+import static Czat.Rozmowa.wyslijWiadomosc;
 
 /**
  *
@@ -11,8 +15,12 @@ package GUI;
  */
 public class Okno extends javax.swing.JFrame {
 
+    boolean pierwszyTekst = true;
+
     public static void main(String args[]) {
         Okno oknoCzatu = new Okno();
+        tekstCzat.setText(botPrzywitanie());
+        tekstWpisz.setText("Wpisz tekst");
     }
 
     public Okno() {
@@ -44,16 +52,19 @@ public class Okno extends javax.swing.JFrame {
         statTrzecie = new java.awt.Label();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMaximumSize(new java.awt.Dimension(1000, 1000));
         setMinimumSize(new java.awt.Dimension(10, 10));
-        setPreferredSize(new java.awt.Dimension(670, 550));
+
+        jScrollPane1.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        jScrollPane1.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
 
         tekstCzat.setColumns(20);
         tekstCzat.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+        tekstCzat.setLineWrap(true);
         tekstCzat.setRows(5);
         tekstCzat.setDisabledTextColor(new java.awt.Color(0, 0, 0));
         tekstCzat.setEnabled(false);
         jScrollPane1.setViewportView(tekstCzat);
+        tekstCzat.setWrapStyleWord(true);
 
         jScrollPane2.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane2.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
@@ -62,6 +73,16 @@ public class Okno extends javax.swing.JFrame {
         tekstWpisz.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
         tekstWpisz.setLineWrap(true);
         tekstWpisz.setRows(5);
+        tekstWpisz.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                tekstWpiszMousePressed(evt);
+            }
+        });
+        tekstWpisz.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                tekstWpiszKeyTyped(evt);
+            }
+        });
         jScrollPane2.setViewportView(tekstWpisz);
 
         wyslijButton.setText("Wyślij");
@@ -105,8 +126,8 @@ public class Okno extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 470, Short.MAX_VALUE)
-                    .addComponent(jScrollPane1))
+                    .addComponent(jScrollPane2)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 470, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(dodajPlikButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -156,8 +177,24 @@ public class Okno extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void wyslijButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wyslijButtonActionPerformed
-        // TODO add your handling code here:
+        tekstCzat.setText(wyslijWiadomosc(tekstWpisz.getText()));
+        tekstWpisz.setText(null);
+        tekstCzat.setText(botOdpowiedz());
     }//GEN-LAST:event_wyslijButtonActionPerformed
+
+    private void tekstWpiszMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tekstWpiszMousePressed
+        if (pierwszyTekst) {
+            tekstWpisz.setText(null);
+            pierwszyTekst = false;
+        }
+    }//GEN-LAST:event_tekstWpiszMousePressed
+
+    private void tekstWpiszKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tekstWpiszKeyTyped
+        if (evt.getKeyChar() == '\n'){
+            wyslijButton.doClick();
+        }
+
+    }//GEN-LAST:event_tekstWpiszKeyTyped
 
     /**
      * @param args the command line arguments
@@ -167,15 +204,15 @@ public class Okno extends javax.swing.JFrame {
     private javax.swing.JButton dodajPlikButton;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JProgressBar progresStaty1;
-    private javax.swing.JProgressBar progresStaty2;
-    private javax.swing.JProgressBar progresStaty3;
-    private java.awt.Label statDrugie;
-    private java.awt.Label statPiersze;
-    private java.awt.Label statTrzecie;
-    private java.awt.Label statystyka;
-    private javax.swing.JTextArea tekstCzat;
-    private javax.swing.JTextArea tekstWpisz;
+    public static javax.swing.JProgressBar progresStaty1;
+    public static javax.swing.JProgressBar progresStaty2;
+    public static javax.swing.JProgressBar progresStaty3;
+    public static java.awt.Label statDrugie;
+    public static java.awt.Label statPiersze;
+    public static java.awt.Label statTrzecie;
+    public static java.awt.Label statystyka;
+    public static javax.swing.JTextArea tekstCzat;
+    public static javax.swing.JTextArea tekstWpisz;
     private javax.swing.JButton wyslijButton;
     // End of variables declaration//GEN-END:variables
 
