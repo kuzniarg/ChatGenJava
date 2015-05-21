@@ -5,6 +5,7 @@
  */
 package Czat;
 
+import static Czat.Baza.generujTekst;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Random;
@@ -55,7 +56,7 @@ public class Rozmowa {
             rozmowa+= jaInfo();
             rozmowa += wiadomosc + "\n\n";
             
-            rozmowa += botOdpowiedz();
+            rozmowa += botOdpowiedz(wiadomosc);
         }
         rozmowa += "\n";
         
@@ -91,10 +92,10 @@ public class Rozmowa {
         return tekst;
     }
     
-    public static String botOdpowiedz(){
+    public static String botOdpowiedz(String probka){
         String tekst = "";
         tekst += botInfo();
-        tekst += "No póki co niewiele\n";
+        tekst += generujTekst(probka) + "\n";
         
         return tekst;
     }

@@ -5,9 +5,10 @@
  */
 package Czat;
 
-import static Czat.Rozmowa.botOdpowiedz;
+import static Czat.Baza.dodajDoBazy;
 import static Czat.Rozmowa.botPrzywitanie;
 import static Czat.Rozmowa.wyslijWiadomosc;
+import java.util.ArrayList;
 
 /**
  *
@@ -21,6 +22,13 @@ public class Okno extends javax.swing.JFrame {
         Okno oknoCzatu = new Okno();
         tekstCzat.setText(botPrzywitanie());
         tekstWpisz.setText("Wpisz tekst");
+        Baza.baza = new ArrayList<>();
+        Baza.dodajDoBazy(Teksty.tekstTestowy1);
+        Baza.dodajDoBazy(Teksty.tekstTestowy2);
+        Baza.dodajDoBazy(Teksty.tekstTestowy3);
+        Baza.dodajDoBazy(Teksty.tekstTestowy4);
+        Baza.dodajDoBazy(Teksty.tekstTestowy5);
+        System.out.println(Baza.druk());
     }
 
     public Okno() {
@@ -52,6 +60,7 @@ public class Okno extends javax.swing.JFrame {
         statTrzecie = new java.awt.Label();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Symulator czatu");
         setMaximumSize(new java.awt.Dimension(1000, 1000));
         setMinimumSize(new java.awt.Dimension(10, 10));
         setPreferredSize(new java.awt.Dimension(670, 550));
@@ -98,6 +107,11 @@ public class Okno extends javax.swing.JFrame {
         });
 
         dodajPlikButton.setText("Dodaj plik tekstowy");
+        dodajPlikButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                dodajPlikButtonActionPerformed(evt);
+            }
+        });
 
         progresStaty1.setStringPainted(true);
 
@@ -196,6 +210,10 @@ public class Okno extends javax.swing.JFrame {
         }
 
     }//GEN-LAST:event_tekstWpiszKeyTyped
+
+    private void dodajPlikButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dodajPlikButtonActionPerformed
+        dodajDoBazy("Na początek bardzo bananalny tekst ćwiczeniowy. Na początek niepotrzebny jest tekst skomplikowany. Na górze róże, na dole fiołki, ale początek i koniec skomplikowany.");
+    }//GEN-LAST:event_dodajPlikButtonActionPerformed
 
     /**
      * @param args the command line arguments
