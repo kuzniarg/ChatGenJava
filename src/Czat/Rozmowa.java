@@ -47,16 +47,20 @@ public class Rozmowa {
     }
     
     public static String wyslijWiadomosc(String wiadomosc){
-        if ('\n' == wiadomosc.charAt(wiadomosc.length()-1))
-            wiadomosc = wiadomosc.substring(0, wiadomosc.length()-1);
-        
-        if ("".equals(wiadomosc))
+        if ("".equals(wiadomosc) || "\n".equals(wiadomosc))
             rozmowa += botNierozmowny() + "\n";
         else{
+            if ('\n' == wiadomosc.charAt(wiadomosc.length()-1))
+                wiadomosc = wiadomosc.substring(0, wiadomosc.length()-1);
             rozmowa+= jaInfo();
-            rozmowa += wiadomosc + "\n";
+            rozmowa += wiadomosc + "\n\n";
+            
+            rozmowa += botOdpowiedz();
         }
         rozmowa += "\n";
+        
+        
+        
         return rozmowa;
     }
     
@@ -88,7 +92,10 @@ public class Rozmowa {
     }
     
     public static String botOdpowiedz(){
+        String tekst = "";
+        tekst += botInfo();
+        tekst += "No póki co niewiele\n";
         
-        return rozmowa;
+        return tekst;
     }
 }

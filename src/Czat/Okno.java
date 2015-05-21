@@ -52,7 +52,9 @@ public class Okno extends javax.swing.JFrame {
         statTrzecie = new java.awt.Label();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMaximumSize(new java.awt.Dimension(1000, 1000));
         setMinimumSize(new java.awt.Dimension(10, 10));
+        setPreferredSize(new java.awt.Dimension(670, 550));
 
         jScrollPane1.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane1.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
@@ -104,7 +106,7 @@ public class Okno extends javax.swing.JFrame {
         progresStaty3.setStringPainted(true);
 
         statystyka.setAlignment(java.awt.Label.CENTER);
-        statystyka.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
+        statystyka.setFont(new java.awt.Font("Tahoma", 0, 21)); // NOI18N
         statystyka.setText("Statystyka");
 
         statPiersze.setAlignment(java.awt.Label.CENTER);
@@ -149,9 +151,9 @@ public class Okno extends javax.swing.JFrame {
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 380, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(dodajPlikButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(19, 19, 19)
-                        .addComponent(statystyka, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(23, 23, 23)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(statystyka, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(statPiersze, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(progresStaty1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -179,7 +181,6 @@ public class Okno extends javax.swing.JFrame {
     private void wyslijButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wyslijButtonActionPerformed
         tekstCzat.setText(wyslijWiadomosc(tekstWpisz.getText()));
         tekstWpisz.setText(null);
-        tekstCzat.setText(botOdpowiedz());
     }//GEN-LAST:event_wyslijButtonActionPerformed
 
     private void tekstWpiszMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tekstWpiszMousePressed
