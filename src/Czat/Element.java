@@ -5,7 +5,9 @@
  */
 package Czat;
 
+import static Czat.Baza.baza;
 import java.util.ArrayList;
+import java.util.Random;
 
 /**
  *
@@ -24,6 +26,12 @@ public class Element {
     
     public void dodajSufiks (String sufiks){
         this.sufiks.add(sufiks);
+    }
+    
+    public String losujSufiks(){
+        Random r = new Random();
+        int numer = Math.abs(r.nextInt()) % sufiks.size();
+        return sufiks.get(numer);
     }
     
 }

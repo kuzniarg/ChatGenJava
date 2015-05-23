@@ -11,488 +11,422 @@ package Czat;
  */
 public class Teksty {
     
-    public static String tekstTestowy1 = "Księga I\n" +
-"\n" +
-"\n" +
-"\n" +
-"I\n" +
-"\n" +
+    public static String tekstTestowy1 = 
 "Na piętrze żarnowym już się ściemniało.\n" +
-"\n" +
 "Parobek młynarski zaledwie mógł dalej czytać. Siedział na worku, pochyliwszy zmarszczone czoło nad kartami książki, kiedy niekiedy podnosząc wytężone, mrugające oczy. Przypadkowy obserwator mógłby przypuścić, że ma przed sobą biednego geniusza, który musi wyzyskać każdą minutę, dającą się urwać z bezdusznej, najemnej pracy, aby zaspokoić wrodzone, palące pragnienie wiedzy. Ale nie tak to było. Poczciwy Jörgen nie był stworzony do księgi i pióra; dziełem, które studiował z tak wielkim wysiłkiem, był ilustrowany kalendarz ludowy.\n" +
-"\n" +
 "To arcydzieło było najukochańszą własnością Jörgena, ponieważ otrzymał je na Boże Narodzenie w podarunku od Lizy, pięknej dziewki służebnej. W świąteczny wieczór, kiedy właśnie mieli jeść pączki, wsunęła mu chyłkiem w rękę tę książkę. Ilekroć później dotykał książki, doznawał na nowo tego rozkosznego dreszczu, który wstrząsnął nim wówczas wobec takiego nieoczekiwanego dowodu życzliwości. Dlatego też często brał ją do ręki. W ciągu zimowych miesięcy studiował poważną i użyteczną część, gdzie znajdowało się dokładne zestawienie cen zboża z ostatnich trzech lat, co go przekonywało, że jeżeli tak dalej pójdzie, to niebawem nie opłaci się już być samodzielnym młynarzem i lepiej zadowolić się stanowiskiem pożytecznego pomocnika. Były tu również zapiski o pogodzie, które stwierdzały ponad wszelką wątpliwość, że młyn podczas wiosny i jesieni chwyta obficie wiatr śmigami, a natomiast podczas mroźnej pogody i kanikuły musi być przygotowany na brak wiatru, co zresztą ku radosnej dumie mógł Jörgen potwierdzić z własnego doświadczenia. Część rozrywkowa, złożona z anegdot i krótkich opowiadań, wystarczyła mu na wczesną wiosnę, teraz zaś, w połowie maja, zabrał się do opowieści Czerwony Rycerz z Morskiego Zamku — nie bez silnego bicia serca, ponieważ ten główny utwór wypełniał przeszło sześćdziesiąt wielkich, ciasno zadrukowanych stronic. Ale byłoby przecież grzechem nie przeczytać tak dużej części cennego dzieła!\n" +
-"\n" +
 "Niebawem jednak jego odwaga została hojnie wynagrodzona. To, co wyczytał tutaj, było tak nadzwyczajne, że pragnął, aby było tego jeszcze raz tyle. Obcował tutaj z szlachetnymi rycerzami, którzy zawsze chadzali w żelaznych zbrojach niby żywe, okrągłe piece, którzy dokonywali najsławniejszych czynów, zwłaszcza we wschodnich krajach, gdzie mieli chwalebny zwyczaj rozłupywać Saracenom głowy aż po szczękę albo nawet rozcinać ich aż do siodła, jeżeli byli szczególnie dobrze usposobieni. Rozmawiali z sobą o tym bardzo poufale, opróżniając jednocześnie tyle złotych pucharów, że czytającemu wprost zasychało w gardle. A kiedy wypili ostatni puchar, kładli znów nogę w strzemię i wbijali złociste ostrogi w bok szlachetnych koni, z których najszlachetniejszy, łup wojenny krzyżowego rycerza, arabski rumak, grzebał w ziemi szczerozłotymi podkowami. Jörgen nie przypuszczał nigdy, aby na świecie było tyle złota. Damy zaś chodziły, szeleszcząc jasnym jedwabiem lub strojne w barwne aksamity dosiadały konia, ale ani jedwab, ani aksamit nie mogły utaić śnieżnych wypukłości łona, dokoła którego skrzyły się drogie kamienie i perły niby krople w lesie po deszczu.\n" +
-"\n" +
 "Jedna jedyna tylko okoliczność mąciła dzielnemu parobczakowi całkowitą rozkosz: były to bardzo proste, a nawet pospolite imiona. Cóż należało o tym sądzić, że główna bohaterka miała na imię Metta i że, co więcej, nazywano ją panienką Mettą? To budziło w nim pewną nieufność ku autorowi, nasuwało przypuszczenie, że nie był zbyt obeznany z epoką, jaką zamierzył przedstawić. Jörgen byłby z czystym sumieniem przysięgał, że arab miał złote podkowy — ale nic nie mogło go przekonać, że piękna córka rycerska nazywała się panną Mettą.\n" +
-"\n" +
 "Pominąwszy to nieprzystojne imię, była to właśnie osoba, którą najbardziej się zajmował podczas lektury. Albowiem od razu można było poznać, że była ona zupełnie podobna do Lizy. Drobiazgowa krytyka mogłaby wprawdzie wtrącić swoje trzy grosze, że — według autentycznego opisu — rude włosy Metty, kiedy je czesała złotym grzebieniem, spływały jej na ramiona niby ognista fala płomieni, gdy natomiast Liza miała żółte włosy wpadające nieco w zielonkawy odcień — niby wymokła słoma. Podobnie rycerska panna była posiadaczką „wdzięcznego, lecz energicznie wygiętego nosa”, podczas gdy tenże organ u młynarskiej dziewki był szeroki i krótki, i raczej tym objawiał swą energię, że podciągał nieco w górę mięsistą wargę, dzięki czemu widać było parę dużych, białych zębów — a to znowu niezupełnie odpowiadało opisowi „małych ust o wąskich, zaciśniętych wargach”. Także oblicze bohaterki powieści było nazbyt szlachetne, by posiadało dołeczki, podczas gdy na policzkach Lizy widniały zawsze dwa przy najlżejszym uśmiechu, trzeci zaś dołeczek ozdabiał stale brodę, nieco cofniętą w tył twarzy, jak gdyby naciśniętej zbyt silnie przy wygniataniu tego dołeczka.\n" +
-"\n" +
 "Jörgen oczywiście musiałby przyznać, że te i inne jeszcze szczegóły niezupełnie zgadzały się z sobą; to jednak nie przeszkadzało bynajmniej, że nie mógł przeczytać ani jednego wiersza o Metcie, nie myśląc równocześnie o Lizie.\n" +
-"\n" +
 "Najważniejsze było właśnie to, że jak wszyscy przedstawiciele męskiego rodu w książce kochali się w pannie Metcie, tak samo tutaj w młynie i majster, i on sam, i drugi parobek Chrystian, i nawet pędrak Lars, uczeń młynarski — wszyscy durzyli się w Lizie. Ale i to także zgadzało się, na Boga, że żaden z nich nie wiedział, jak ona odnosi się do niego, a cóż dopiero mówić o innych. Albowiem Jörgen nie mógłby w żadnym wypadku przysiąc, czy ów Lars, wokół którego dziecięcych ust rosły tak rzadkie włoski, że nawet mączny pył się ich nie czepiał, czy tenże Lars nie skradł przy nadarzającej się sposobności całusa, do którego on sam tak tęsknie składał swoje wargi, ozdobione wcale wspaniałym wąsem. A właśnie opowieść stwierdzała, że panna Metta, wyszedłszy na ciemny balkon, aby ochłonąć nieco po tańcu, pocałowała w usta giermka z błękitnymi jak niezabudki oczyma, który przyniósł jej wino; uczyniła to zaś bezpośrednio po tym, kiedy swą oziębłością doprowadziła do rozpaczy najświetniejszych rycerzy.\n" +
-"\n" +
 "Cóż więc dziwnego, że Jörgen z prawdziwą namiętnością śledził teraz podstępne drogi kobiece pięknej Metty, obsługując jednocześnie pracujące kamienie młyńskie — albo też zapominając o ich obsłudze. Ponieważ mógł przeczytać jednym ciągiem tylko parę stronic, był jeszcze na długi czas zaopatrzony, tym więcej że czytywał tylko na piętrze żarnowym. W chwilach wolnych od pracy zajmował się czym innym — śledził przede wszystkim podstępne drogi kobiece pięknej Lizy. Na dolnym piętrze zbyt wiele czynności przeszkadzało czytaniu: trzeba było windować i spuszczać worki, usuwać je po napełnieniu mąką i podsuwać nowe, ważyć i zapisywać do księgi. Tutaj, na górze było całkiem inaczej: wystarczało kiedy niekiedy poruszyć ręką, a młyn sam pracował; a jeżeli nawet kiedyś zabrakło tej pomocnej ręki, to jedynym złym następstwem było tylko to, że kamienie przez jakiś czas mełły powietrze — mełły jednak w każdym wypadku.\n" +
-"\n" +
 "Aczkolwiek to miejsce pobytu różniło się bardzo znacznie od wspaniałych sal, po których poruszała się panienka Metta — to jednak zdawało się Jörgenowi, że przynależy do opowieści; w ckliwy, sycący zapach mąki wkradała się nieokreślona woń rycerskiej epoki i zamkowego życia. Dzięki właściwej symetrii sześciu pionowych walców, które wznosiły się do powały niby smukłe kolumny, dzięki czworgu drzwiom, z których jedne były zawsze otwarte od strony ganku, dzięki spuszczanej klapie przypominającej wejście do tajnych więzień, dzięki wreszcie otworom w powale, przez które spoglądało się po obu stronach niby przez dwie wieżyce w górę pod sam kaptur — dzięki temu wszystkiemu można było poniekąd porównywać to górne piętro z rycerskim zamczyskiem. Przestrzeń ta, wypełniona zakurzonymi drewnianymi belkami, pozbawiona wszelkiej ozdoby bardziej może przypominała średniowiecze, aniżeli przypuszczał „łaskawy czytelnik”. Liza, tak samo jak prawdopodobnie Jörgen, w swym codziennym stroju roboczym była podobniejsza do prawdziwej dziewicy Metty z okresu wojen krzyżowych, niż to można było sądzić na podstawie kwiecistego opisu autora.\n" +
-"\n" +
 "Wiał lekki wiatr. Wszystkie trzy kamienie młyńskie wyłączono. Pracowały tylko łuszczarka i sortownica, której małe kółko warczało nieznużenie tuż przy otwartych drzwiach. Regularny szmer jakby trącej piły mieszał się z przypominającym łoskot wodospadu szumem zboża w łuszczarce, której oś hałasowała nieregularnymi uderzeniami i brzęczała żelazem okucia. Kiedy niekiedy rozlegał się ostry ton niby głos świerszcza. Głuchy poszum śmig i przytłumiony skrzyp kół na trzech górnych piętrach wtórowały tej przenikliwej muzyce piętra żarnowego.\n" +
-"\n" +
 "Jörgen siedział zamyślony i wsłuchiwał się w te dźwięki, nie mając lepszego zajęcia, bo czytanie musiał przerwać. Nadaremnie przesiadał się z jednego worka na drugi, oddalając się od miejsca pracy — dalekowzroczne oczy nie rozróżniały już liter w mdłym świetle wieczornym. Gniewało go to bardzo, przerwał bowiem czytanie w strasznie zajmującym miejscu: panienka Metta wsypała właśnie truciznę do pucharu, który był przeznaczony dla narzeczonej Czerwonego Rycerza, cnotliwej panny Karen. Metta mianowicie pragnęła poślubić Czerwonego Rycerza; nie dlatego że go kochała, ale dlatego, że był on najbogatszym i najpotężniejszym rycerzem w całej okolicy. I można było przypuszczać, że bez wahania pozbędzie się również męża w ten sam sposób, skoro tylko utrwali swoje prawa pani na Morskim Zamku. Bardzo wyraźnie odgadywał to giermek Czerwonego Rycerza — właśnie ten sam, któremu polecono podać zabójczy napój tryskającej zdrowiem Karen.\n" +
-"\n" +
 "Ten zbrodniczy klimat, który pojawił się niespodziewanie w opowiadaniu, wprawił Jörgena w silne podrażnienie, zwłaszcza dzięki porównaniu, jakie mimo woli ciągle przeprowadzał. Czy też Liza byłaby zdolna uczynić coś takiego? Przeczucie demonizmu kobiecej natury wstrząsnęło nim dreszczem trwogi, chociaż poniekąd działało także pociągająco. Szczególnie zastraszało go to, że sam uważał się za giermka z powieści. Już dawno przywłaszczył sobie w wyobraźni jego fałdziste, żółte buty ze srebrnymi ostrogami, jego jedwabny kaftan i krótki aksamitny płaszcz obszyty futrem kuny, a również jego pięknie brzmiące imię Hjalmar. Trwając w tej roli, podawał niedawno z drżeniem serca strzemię Lizie — to znaczy pannie Metcie, kiedy wsiadała na swoją śnieżnobiałą klacz. A kiedy po zachodzie słońca rozbito obóz w zielonym lesie i rozpalono ogień, aby upiec upolowaną zwierzynę, rycerz posłał go z pucharem wina do panny Karen, która zmęczona jazdą wypoczywała w gronie swych przyjaciółek na uboczu na posłaniu z liści. Wówczas to zdarzyło się, że od ciemnego bukowego pnia oderwała się jakaś postać i podeszła ku niemu — a postacią tą była Metta. I nie sprzeciwił się, gdy wsypała biały proszek do pucharu, „aby napój nabrał kojącej mocy” — i zrozumiał dobrze, co znaczą te słowa, i pojął jeszcze lepiej, co mu panienka przyrzeka, zapewniając, że nie poniesie szkody, kiedy ona zostanie panią na Morskim Zamku — pojął, dlaczego uśmiechnęła się tak dziwnie słodko i złowrogo w czerwonym blasku myśliwskich ognisk, przeświecającym między ciemnymi pniami drzew… Jakże chętnie czytałby dalej, aby się dowiedzieć, czy przypadkiem nie potknie się o korzenie i nie wyleje jadowitego napoju, zanim dojdzie do Karen. Nie odważał się rozmyślać nad tym — było to zbyt niesamowite.\n" +
-"\n" +
 "A teraz siedział z książką w ręku i nasłuchiwał, jak młyn hałasuje i chrzęści, furczy i skrzypi, a te dobrze znane dźwięki mówiły do niego prozaiczną, ale kojącą mową o codziennej pracy, mówiły o tym, że lepiej jest trzymać się swego zawodu i nie pozwalać myślom, by bezczynnie błądziły po bezdrożach.\n" +
-"\n" +
 "Jörgen wstał i położył kalendarz na mącznicy, wytarłszy poprzednio rękawem skrzynię. Potem wydobył z otworu w podłodze płaskie, żelazne wiadro, potrząsnął nim i uważnie obejrzał ziarno. Nie można było dojrzeć, czy jest już należycie oczyszczone, ale wydawało mu się, że pozostawało już chyba dość długo w łuszczarce.\n" +
-"\n" +
 "Przesunął je ku sortownicy i wrzucił parę szufli do leja. Potem odszukał fajkę leżącą gdzieś na skrzyni i próbował zapalić zapałką przygnieciony palcem popiół w nadziei, że na dnie kryje się jeszcze reszta tytoniu. Przez niedomknięte drzwi poza sortownicą wlatywały i wylatywały wróble i ćwierkając wydziobywały rozsypane ziarna. Jörgenowi wydawało się niemal, że ptaki szydzą sobie z niego, ponieważ stoi tutaj i mozoli się, aby zgotować im biesiadę. Szczególnie zaś rozgniewał się, gdy w tej chwili oś załomotała wściekle, koło skrzypnęło jak oszalałe, a z wszystkich szpar i otworów posypała się mąka, wirując białym tumanem ku drzwiom. Sprawiało to wrażenie, jak gdyby młyn mówił: „No, teraz dopiero zabieramy się ostro do pracy!”.\n" +
-"\n" +
 "Teraz! Do diabła! Przez calutki dzień harował jak koń, bo w tym czasie, kiedy młynarka chorowała, młynarz ani palcem nie ruszył, a roboty było tyle, że ledwie udało się kiedy niekiedy nabić fajkę w przerwie. Dopiero mniej więcej przed godziną mógł wziąć książkę do ręki na chwilę… Co prawda, do końca dnia roboczego brakowało jeszcze pół godziny, a także trzeba było właściwie wyłuszczyć trochę więcej zboża — ale diabli wiedzą, jak tu jeszcze dalej pracować! Nie mógł po prostu zebrać myśli. Tak na przykład nie przypominał sobie, czy kontrolował już ziarno w wiadrze. Zresztą i tak nic by już nie zobaczył, musiałby chyba wynieść wiadro na galeryjkę. Nie, to doprawdy nie ma celu tak się zaharowywać.\n" +
-"\n" +
 "Natomiast celowe było pogawędzić trochę z Lizą, która właśnie o tej porze sprzątała izbę czeladną. Chrystian pojechał, a dla tego głupiego chłopaka, dla Larsa, znajdzie się już jakieś zajęcie.\n" +
-"\n" +
 "To, że popiół w fajce uporczywie nie chciał się zatlić, a kopciuch z tytoniem przepadł bez śladu, to umacniało go jeszcze w przeświadczeniu, że napracował się dosyć w dniu dzisiejszym.\n" +
-"\n" +
-"Więc Jörgen wyszedł leniwie na galeryjkę, aby sprawdzić, czy młynarz nie kręci się gdzieś w pobliżu i czy sytuacja jest na tyle pomyślna, by można młyn zatrzymać.\n" +
-"\n" +
-"\n" +
-"\n" +
-"II\n";
-    public static String tekstTestowy2 = "\n" +
+"Więc Jörgen wyszedł leniwie na galeryjkę, aby sprawdzić, czy młynarz nie kręci się gdzieś w pobliżu i czy sytuacja jest na tyle pomyślna, by można młyn zatrzymać.\n";
+
+    public static String tekstTestowy2 = 
 "Płuca jego, oddychające tak długo przepojoną mącznym pyłem atmosferą młyna, wypełniły się nagle świeżym powietrzem morskim, które silny wiatr północno-wschodni napędzał od strony Sundu. Wiatr zmarszczył powierzchnię wody, tak że błyszczała matowo niby zroszony metal, na niebie zaś rozpostarł wachlarzowato mgły i skłębione chmurki, które goniły się wzajemnie, jedne skąpane jeszcze w purpurze zachodu, inne już przygasłe, zielonawoszare, i wreszcie takie, których nie dosięgła jeszcze czerwień wieczoru i które słońce oświecało pełnym blaskiem. W miejscu, gdzie słońce zaszło, piętrzyła się fioletowa góra obłoków.\n" +
-"\n" +
 "Ku temu niebu zwrócił się instynktownie młynarski wzrok Jörgena, aby stwierdzić, czy są jakieś oznaki, które by na podstawie doświadczenia, wzbogaconego teraz całą meteorologiczną mądrością kalendarza, umożliwiły wysnucie pewnych wniosków co do dnia jutrzejszego. Ale brakowało tych właśnie oznak, które by uradowały jego serce, zapowiadając ciszę i bezczynność. Przeciwnie, to niebo przyrzekało nie tylko „pełną czapkę wiatru”, ale pełny kaptur młyński. I oko młynarskie, oko nienależące do właściciela, odwróciło się z niechęcią.\n" +
-"\n" +
 "Pomiędzy błyszczącym Sundem i jaśniejącym niebem rozciągało się wybrzeże Zelandii niby olbrzymie, daleko wysunięte wzgórze. Lasy i niwy zlewały się w jedno za gorącą purpurową zasłoną, która zacierała wszystkie szczegóły. Tylko jakiś kościół, wzniesiony na wzgórzu, sterczał białą plamą w tej masie. Wyglądał tak, jak gdyby jedna z licznych mew krążących nad Sundem zawisła w powietrzu i znieruchomiała w jednym punkcie. Z tej strony Sundu rozciągał się Falster. Tu widać było dokładnie szczegóły, ponieważ galeryjka młyna była najwyższym punktem w całym widzialnym okręgu, wyjąwszy szczyty drzew. Nie tych drzew, które tu przeważnie rosły — nie szczyty tych szerokolistnych topól, które w postaci kulistogłowych karłów ogradzały pola, aż wreszcie ostatnie ich szeregi przepełniały coraz to węższy zagon soczystozielonego żyta i oliwkowych zasiewów wiosennych i sprawiały wrażenie głów kapusty w olbrzymim ogrodzie warzywnym. Ponad takie drzewa człowiek wynosił się tutaj wysoko. Ale były także prawdziwe lasy: wszędzie wynurzały się spośród topolowych zarośli, najbliższe błyszczały świeżą, miękką zielenią młodego bukowego listowia, dalsze miały coraz bledszą barwę, wpadającą w fioletowe odcienie.\n" +
-"\n" +
 "Jörgen z zadowoleniem obserwował ten dobrze znany krajobraz, nieświadomie radując się jego rozległością po wyjściu z ciemnej klatki młyna, gdzie tak długo był uwięziony. Ale raz po raz spoglądał na podwórze, gdzie kryła się przynęta. Zaraz po wyjściu na galeryjkę Jörgen zauważył, że jednokonny powozik doktora stoi przed drzwiami domu; rozważał więc, czy wobec tego jest wskazane zatrzymać młyn. Doszedł do wniosku, że nie, i zaczął szukać jakichś śladów Lizy. Niebawem przekonał się, że nie znajdzie jej ani przy studni, ani w ogrodzie warzywnym, ani w kurniku. W domu, oczywiście, mógłby ją dostrzec tylko wtedy, gdyby stanęła przy oknach, ale były pewne niezawodne znaki: gdyby poszła do pokojów, zostawiłaby swoje drewniane trepy przy progu. Wprawdzie było sucho, ale musiała chodzić w trepach, bo trzewiki posłała do szewca; tego rodzaju drobiazgi Jörgen zawsze bacznie obserwował, mogły bowiem mieć swoje znaczenie.\n" +
-"\n" +
 "Dalej zaś: w kuchni towarzyszył zawsze Lizie jej ulubieniec, biały kot Pilatus — kot zaś spacerował teraz wśród grządek ogródka, którego piękne białe sztachety zamykały z jednej strony wjazd na podwórze młyna. Pudel Karo, którym Pilatus najgłębiej pogardzał, położył się spokojnie na progu obory, czego z pewnością nie uczyniłby, gdyby Liza była wewnątrz, albowiem nie lubił zbliżać się ku niej, smutnie wspominając licznie otrzymywane kopnięcia.\n" +
-"\n" +
 "Ale Liza mogła się jeszcze znajdować w piekarni, przybudowanej do kamiennej podstawy młyna. Aby przedsięwziąć przeszpiegi w tej części twierdzy, Jörgen musiał wcisnąć się poza śmigi, które obracały się przed nim z głuchym świstem, klaszcząc wesoło swymi luźnymi płaszczyznami. Drzwi piekarni były zamknięte, a ponieważ Liza miała z opieszałości przyzwyczajenie przymykania ich tylko, więc i tam nie należało jej poszukiwać.\n" +
-"\n" +
 "Kiedy Jörgen powrócił wzrokiem z tej wyprawy, dostrzegł doktora wdziewającego płaszcz w sieni, a potem wychodzącego do powozika w towarzystwie młynarza. Wysoki ponad miarę młynarz pochylił się ku niskiemu, krępemu doktorowi i rozmawiał z nim żywo, doktor natomiast potrząsał ustawicznie głową i wyciągał ramiona, jak gdyby chcąc poprawić na sobie nieco przyciasny płaszcz.\n" +
-"\n" +
 "Przed bystrym wzrokiem młynarskiego parobka nie ukryło się wielkie podniecenie majstra. Jego ręka drżała i aby to utaić, szarpał krótko ostrzyżoną ciemną brodę lub klepał po karku żółtego konika. Z wielkim trudem zdołał przypiąć fartuch powozika, a kiedy tego dokonał, przystanął jeszcze, trzymając silnie prawą ręką oparcie, jak gdyby chcąc zatrzymać powozik i zadać jeszcze parę pytań.\n" +
-"\n" +
 "Ale bardziej niż na młynarzu Jörgen skupił uwagę na jasnej dziewczęcej główce, która ukazała się obok w otwartym oknie: więc była w spiżarni, nie poszła jeszcze do izby czeladnej. Nic zatem nie stracił.\n" +
-"\n" +
 "Dzięki temu mniej go rozgniewało niż w innych okolicznościach, że młynarz rozstawszy się ostatecznie z doktorem, łaził tu i tam po podwórzu. Na rogu białych sztachet zatrzymał się i spojrzał na drogę wiodącą z zewnątrz na podwórze między młynem i ogrodem.\n" +
-"\n" +
 "Jörgen zamierzał właśnie wejść do wnętrza i jeszcze raz potrząsnąć zboże, gdy młynarz odwrócił się i zawołał:\n" +
-"\n" +
 "— Jörgenie! Czy tam z góry nie widać wózka jadącego od strony Stinderup?\n" +
-"\n" +
 "Parobek wzdrygnął się — nie przypuszczał, że młynarz go zauważy.\n" +
-"\n" +
 "W oddali, gdzie tylko topole znaczyły drogę, posuwała się naprzód chmura z białym jądrem i wielkim ogonem jak u komety, który w górze ponad drzewami rozbłyskał złocistą mgłą.\n" +
-"\n" +
 "— Tak, ktoś jedzie — meldował Jörgen — ale szybciej niż zazwyczaj chodzą nasze gniadosze.\n" +
-"\n" +
 "Szybkim krokiem wrócił więc młynarz do domu.\n" +
-"\n" +
 "Wtedy Jörgen uśmiechnął się zadowolony i spuścił łańcuch prasy — śmigi wnet przestały się poruszać. Kiedy jednak przechodził przez piętro żarnowe, żelazny pierścień na osi kręcił się jeszcze z wściekłym hałasem, jak gdyby protestował przeciwko temu przedwczesnemu zatrzymaniu młyna.\n" +
-"\n" +
 "Na dolnym piętrze było już ciemno: brakowało tu drzwi wiodących na zewnątrz, a dwa małe okienka zniknęły poza barykadą worków. Całą tę przestrzeń wypełniały worki ustawione szeregiem, spiętrzone na sobie lub rozrzucone po podłodze; na jednym z worków leżał uczeń młynarski Lars, który zasnął przed półgodziną. Śniło mu się, że ulubieniec Lizy, biały kot Pilatus, który w ogóle nigdy nie zachodzi do młyna, wkradł się tym razem do wnętrza i zasiadł na środku komory, jak gdyby obejmując ją w posiadanie. Powoli kot urastał do wielkości pantery, jaką Lars widział kiedyś na jarmarku, a jednocześnie mruczał z odpowiednią siłą, tak że wreszcie zagłuszył całkowicie hałas młyna. Wpatrywał się w Larsa płomiennymi oczyma i oblizywał się. Lars był bardzo przerażony, ale doznawał uczucia, że pogładzenie ręką tego błyszczącego futra musi być niezwykłą rozkoszą. Nagle Pilatus przestał mruczeć i ziewnął tak straszliwie, że aż szczęki mu głośno trzasnęły.\n" +
-"\n" +
 "Lars ocknął się przestraszony i zauważył w tej chwili, że młyn stoi i że ktoś schodzi na dół po trzeszczących schodach. Zerwał się szybko i zdołał jeszcze naładować worek na taczkę, zanim zjawił się Jörgen. Parobek spojrzał na chłopca surowo i karcąco — postępował tak zawsze, aby zaznaczyć dzielącą ich pozycję społeczną. Na szczęście ciemność skryła w sobie zakłopotane oblicze Larsa.\n" +
-"\n" +
 "Jörgen podszedł ku oknu wychodzącemu na zachód. Poprzez brudne szybki padało jeszcze nieco wieczornego światła na księgę rachunkową leżącą na małym kantorku. Powoli odwracał kartki księgi — bynajmniej nie celem kontroli, ale z przyzwyczajenia, albowiem sądził, że takie postępowanie nadaje mu poniekąd cechę pryncypała. Prócz tego, tym razem szukał pozoru, by stanąć tu na posterunku. Pragnął się dowiedzieć, kogo Chrystian wiezie z takim pośpiechem, zależało mu także na tym, aby dosłyszeć, kiedy w przejściu rozlegnie się odgłos drewnianych trepów. Nie mogło to ujść jego uwagi, ponieważ zapadnia, służąca do windowania worków, znajdowała się tuż obok. Tylko ten głupi smarkacz niepotrzebnie hałasował taczkami, przesuwając bez końca worki.\n" +
-"\n" +
 "Toteż oświadczył Larsowi, że byłoby nader pożądane, aby zajął się pracą na wyższym piętrze. Na skromne zapytanie Larsa, czy nie można by tego odłożyć do jutra, odpowiedział ciętym zapytaniem: „A może do przyszłego roku, hę?” — a kiedy chłopiec zauważył, że może najlepiej byłoby zrobić przede wszystkim tutaj porządek, poprosił go stanowczo, by słuchał tego, co mu każą, i nie wtrącał zawsze swoich trzech groszy. Posłuszny tej doskonałej radzie Lars zdjął z belki małą blaszaną lampkę bez szkła, zapalił ją i powędrował na górę.\n" +
-"\n" +
 "W tej samej chwili przyjechał wózek.\n" +
-"\n" +
 "Aha! Więc to proboszcza przywieziono!\n" +
-"\n" +
 "W parę minut później usłyszał upragniony stuk drewnianych trepów, a gdy zerknął poprzez szeroką szparę zapadni, dojrzał przesuwający się niebieski skrawek sukienki.\n" +
-"\n" +
 "Szybko zbiegł po ciemnych schodach, pchnął silnie drzwi z przeciwnej strony przejazdu i stanął na progu izby czeladnej.\n" +
-"\n" +
-"\n" +
-"\n" +
-"III\n" +
-"\n" +
 "Liza była tam istotnie.\n" +
 "\n";
 public static String tekstTestowy3 = "Obejmowała ramionami potężną pierzynę i tylko wygięte plecy i kark rysowały się wyraźnie na tle słabego światła dziennego, wpadającego przez okno z wschodniej strony. W środku izby krzyżowało się ono z wieczornym blaskiem napływającym przez wrota; po obu stronach przestrzeń ginęła w głębokim mroku, a chociaż izba nie była duża, pobielone ściany wydawały się tylko siwą mgłą okalającą ciemne zarysy łóżek, szaf, wielkiej skrzyni i rozwieszonych ubrań.\n" +
-"\n" +
+
 "— Ach, jesteś tutaj — zawołał Jörgen, stojąc jeszcze w drzwiach i usiłując udać zdziwienie.\n" +
-"\n" +
+
 "Liza odwróciła głowę raczej dlatego, że pierzyna chciała jej opaść na nos, niż dlatego, aby spojrzeć na Jörgena.\n" +
-"\n" +
+
 "— Tak, jestem tu — oświadczyła i nie zwracając dłużej na niego uwagi, cisnęła pierzynę na materac i poczęła ją obrabiać mocnymi uderzeniami dłoni.\n" +
-"\n" +
+
 "Jörgen usiadł na stołku, który przesunęła na środek izby.\n" +
-"\n" +
+
 "— Czy wiesz, kto przyjechał? — zapytał, kiedy pierzyna przybrała normalny kształt, a hałas ucichł.\n" +
-"\n" +
+
 "— Nie, karmiłam świnie, gdy Chrystian przyszedł, a potem nie widziałam go wcale. Zapewne je wieczerzę.\n" +
-"\n" +
+
 "Jörgen wyraził życzenie, aby mu smakowała.\n" +
-"\n" +
+
 "Liza poszła po poduszkę, którą cisnęła przedtem na drugie łóżko; idąc, zatrzymała się przy okienku i spojrzała w stronę domu mieszkalnego.\n" +
-"\n" +
+
 "— Widziałam w stajni gniadosze, dymiło się z koni jak z kotła… musiał, widać, jechać galopem.\n" +
-"\n" +
+
 "— Być może.\n" +
-"\n" +
+
 "Liza położyła poduszkę na właściwym miejscu, rozciągnęła prześcieradło i obetkała je mocno dookoła; robiła to wszystko z pewną starannością, a jednocześnie czekała w milczeniu, co Jörgen powie dalej. Ale on milczał uporczywie niby ktoś, kto ma w ręku wysoki atut i nie chce go wygrać, zanim nadejdzie dobra sposobność.\n" +
-"\n" +
+
 "— Czy wiesz, kogo przywiózł? — zapytała wreszcie.\n" +
-"\n" +
+
 "— Tak… przyjechał proboszcz.\n" +
-"\n" +
+
 "— Jezusie! — szepnęła przerażona i odwróciła się ku niemu.\n" +
-"\n" +
+
 "Ozwało się ciche miauczenie, coś białego poruszyło się na podłodze w głębokim mroku. Był to Pilatus, kocur, którego Jörgen dotychczas nie zauważył. Otarł się o spódnicę i mrucząc pieszczotliwie, wyciągnął szyję, tak że jego szeroka głowa, podobna w zmierzchu do łba ogromnej żmii, dotknęła niemal kolana Lizy. Wydawało się, że żółte źrenice powiększyły się i silniej świecą. Parobek doznał niesamowitego uczucia, widząc skradające się zwierzę, które niby atrybut jakiejś bogini ściśle wiązało się z Lizą. Wydawało się, jak gdyby kot przeczuwał tajemniczym instynktem, że jego pani zamierza wejść na wyższe szczeble społeczne i jak gdyby chciał z tego powodu z podwojonym zapałem wkraść się w jej łaski — w łaski tej, która stała teraz, dysząc szybko wskutek wewnętrznego podniecenia.\n" +
-"\n" +
+
 "— Tak, w takim razie zapewne nie potrwa to już długo — rzekł Jörgen.\n" +
-"\n" +
+
 "— Nie… zapewne nie potrwa już długo — powtórzyła, niemile dotknięta tym, że wyraził jej własną myśl.\n" +
-"\n" +
+
 "— A cóż powiedział doktor?\n" +
-"\n" +
+
 "Liza pochyliła się, jak gdyby poddając się pieszczocie kota i pogłaskała zwierzę.\n" +
-"\n" +
+
 "— Tego nie wiem.\n" +
-"\n" +
+
 "— Jak to?… Stałaś tam przecie i podsłuchiwałaś.\n" +
-"\n" +
+
 "— Ja? Czyś ty stracił rozum?\n" +
-"\n" +
+
 "— O tak, w spiżarni.\n" +
-"\n" +
+
 "— Miałam tam robotę.\n" +
-"\n" +
+
 "— Właśnie przy oknie?\n" +
-"\n" +
+
 "— Tak, właśnie przy samym oknie. A ty musisz zawsze gdzieś stać i wypatrywać.\n" +
-"\n" +
+
 "Jörgen roześmiał się drwiąco.\n" +
-"\n" +
+
 "— Podsłuchiwałam? — mówiła dalej rozgniewanym tonem. — Nie wiem tylko, dlaczego miałabym podsłuchiwać. Czy to może mnie obchodzić, czy pani będzie żyła, czy nie?\n" +
-"\n" +
+
 "Ciągle jeszcze stała pochylona nad kotem, który rozkosznie przewrócił się na grzbiet i wpił się pazurami w jej rękaw, podczas gdy jej palce błądziły po gęstym futrze brzucha. Jasny węzeł włosów dotknął kolana Jörgena. On przechylił się teraz nieco i szepnął jej do ucha:\n" +
-"\n" +
+
 "— Wszystko zależy od tego, jak to będziemy rozumieć, Lizo.\n" +
-"\n" +
+
 "Dziewczyna wyprostowała się nagle i zaśmiała krótkim śmiechem.\n" +
-"\n" +
+
 "„Czyż ja ją tak bardzo kocham?”\n" +
-"\n" +
+
 "Nastało milczenie. Słychać było tylko prychanie kota.\n" +
-"\n" +
+
 "— A zatem cóż doktor powiedział? — pytał Jörgen z uporem.\n" +
-"\n" +
+
 "— Ach! Powiedział, że nie ma wiele nadziei… ale nie trzeba rozpaczać, bo wszystko jest w ręku Boga… powiedział to, co się zwykłe mówi w takich wypadkach.\n" +
-"\n" +
+
 "— Tak, tak przypuszczałem.\n" +
-"\n" +
+
 "— A teraz także proboszcz przyjechał.\n" +
-"\n" +
+
 "Liza nie zastanowiła się, że jeszcze przed odwiedzinami doktora posłano po proboszcza, że zatem nie świadczy to o niczym. Dla niej przybycie proboszcza stało się kropką nad i. Teraz młynarka musi w to uwierzyć.\n" +
-"\n" +
+
 "— Zdaje się, że młynarz przejął się strasznie słowami doktora — mówił dalej Jörgen. — Widziałem, jak mu ręce drżały.\n" +
-"\n" +
+
 "— Och, zaledwie zdołał powstrzymać łzy… a potem ustawicznie błagał: „Musi ją pan uratować, doktorze! Nieprawdaż? Ona nie umrze?…”, zupełnie jak dziecko…\n" +
-"\n" +
+
 "— Tak, to jednak szczególne.\n" +
-"\n" +
+
 "— No, przecież to jego żona.\n" +
-"\n" +
+
 "— Zapewne, ale mnie się zdaje… że jeżeli ktoś ciągle ugania się za inną i jest jakby opętany… można by przypuszczać, że chyba życzy sobie, aby się jej pozbyć.\n" +
-"\n" +
+
 "— Życzy sobie, aby się jej pozbyć? Co ty wygadujesz?\n" +
-"\n" +
+
 "Moralne oburzenie, jakie miało się przejawić w tych słowach, nie sprawiło bynajmniej wielkiego wrażenia na Jörgenie. Podniósł się, oparł kolano na stołku, a łokcie na poręczy i spojrzał dziewczynie ostro w oczy.\n" +
-"\n" +
+
 "— Słuchaj no, Lizo, jeżeli ona umrze, to ja dobrze wiem, kto zostanie żoną młynarza.\n" +
-"\n" +
+
 "— Ach, wiecznie pleciesz niedorzeczności!\n" +
-"\n" +
+
 "— Być może… ale co wiem, to wiem i inni także wiedzą, a ty sama najlepiej.\n" +
-"\n" +
+
 "— No, nie można nigdy przewidzieć, jak się wszystko ułoży — wtrąciła Liza. — Czy tak niechętnie widziałbyś mnie na stanowisku gospodyni?\n" +
-"\n" +
+
 "— Nie wiem… to inna sprawa. Ale jeżeliby ona żyła albo jeżeliby inna przyszła na jej miejsce, to mogłaby się z tobą pokłócić i wydalić cię.\n" +
-"\n" +
+
 "— A czy to sprawiłoby ci przykrość, Jörgenie?\n" +
-"\n" +
+
 "Wypowiedziała to pytanie najczulszym głosem, a mimo zmroku Jörgen zauważył, że spogląda na niego bardzo życzliwie. Już sama myśl, że wydalono by ją z tego domu, zaparła mu niemal oddech w piersi; pod wpływem jej spojrzenia uczuł, że krew uderza mu do głowy.\n" +
-"\n" +
+
 "— Tak, to byłoby najgorsze z wszystkiego, co mogłoby mnie spotkać — wyjąkał.\n" +
-"\n" +
+
 "— No, w takim razie możesz być pewny, że gdyby tamta w domu wyzdrowiała, nie potrwa długo, a będę biegać z książeczką służbową.\n" +
-"\n" +
+
 "Szepnęła te słowa bardzo dobitnym tonem, jak gdyby było niezmiernie ważne przekonać go o konieczności śmierci młynarki. Głos jej drżał, z trudem wypowiadała słowa; wydawała się jakby pełna obaw o to, że odmienne przekonanie parobka może jej zepsuć grę, albo też jakby takie czy inne pragnienie lub prośba mogły powrócić umierającą do życia. Albowiem nie było wykluczone, że zazdrość podsunęła mu takie niedorzeczne pragnienie. Czyż nie brzmiało ono w jego słowach: „Wiem ja dobrze, kto zostanie żoną młynarza”?\n" +
-"\n" +
+
 "Jörgen zastanowił się przez chwilę.\n" +
-"\n" +
+
 "— Tak, ale ja mogę zawsze stąd wylecieć, jeżeli się tak młynarzowi spodoba. A to byłoby takim samym złem… dla mnie.\n" +
-"\n" +
+
 "— Nie, Jörgenie — odpowiedziała Liza, uspokajając go. — Skoro zostanę panią domu, to i ja chyba będę mogła coś powiedzieć i nie może być o tym mowy. Pozostaniesz tutaj, dopóki ci się samemu spodoba, a ja nie przestanę troszczyć się o ciebie. Zdaje mi się, że nam wszystkim będzie tutaj dobrze.\n" +
-"\n" +
+
 "Ostatnie słowa wypowiedziała, przeciągając nieco i nagle schwyciła Pilatusa, który znowu zaczął ocierać się o nią, podniosła go w górę i jak dziecko przycisnęła do piersi.\n" +
-"\n" +
+
 "— Może nam być tutaj dobrze wszystkim razem, nieprawdaż Pilatusie?\n" +
-"\n" +
+
 "Szeptała te słowa na wpół śpiewnym głosem, a kot odpowiadał jej radosnym pomrukiem, wciskając się z niewysłowionym zadowoleniem w gniazdo utworzone z miękkiego łona i ramion kobiety. Wielkie, żółte, demoniczne oczy przeszywały Jörgena. A tuż ponad tym łbem widniała twarz Lizy; wystające kości policzkowe, krótki nos, błyszczące spod górnej wargi zęby i cofnięta w tył broda miały w sobie zawsze coś kociego, co teraz potęgowało się w tym zestawieniu. Co prawda, oczy jej nie były jasne, lecz przeciwnie — bardzo ciemne, a najczęściej prawie pozbawione blasku; w tej chwili jednak, jak zauważył, zapłonęły błyskawicami.\n" +
-"\n" +
+
 "I Jörgen przypomniał sobie pannę Mettę i Hjalmara, jak stali oboje w nocy w bukowym lesie, a blask myśliwskiego ogniska migotał na uśmiechniętych ustach młodej damy i połyskiwał na brzegu pucharu, do którego wsypywała truciznę.\n" +
-"\n" +
+
 "Nagle podszedł całkiem blisko ku Lizie.\n" +
-"\n" +
+
 "— Słuchaj no, a gdybym tak ja miał młyn… taki jak wiatrak kozłowy w Utterslev… czy i w takim razie młynarka musiałaby umierać?\n" +
-"\n" +
+
 "Zaskoczona tym pytaniem, opuściła nagle ramiona. Pilatus, przywykły do takich nagłych odmian, osunął się na podłogę, otrząsnął się i oddalił o kilka kroków od tych zbyt niespokojnych ludzi.\n" +
-"\n" +
+
 "— Znowu pleciesz niedorzeczności. Ja nie zabijam jej przecież!\n" +
-"\n" +
+
 "— Nie, nie! Zastanawiałem się tylko, czy nie wolałabyś być w takim razie gospodynią w *moim* młynie?\n" +
-"\n" +
+
 "— Gdybyś miał tylko wiatrak, to wolałabym wybrać raczej młyn holenderski.\n" +
-"\n" +
+
 "Ta praktyczna uwaga niemal rozbroiła Jörgena.\n" +
-"\n" +
+
 "— Nie… to znaczy… nie sądziłem, że tak bardzo lubisz młynarza.\n" +
-"\n" +
+
 "— A któż ci powiada, że *ciebie* tak bardzo lubię?\n" +
-"\n" +
+
 "Jörgen zamilkł i westchnął z rezygnacją.\n" +
-"\n" +
+
 "Zdjął właśnie z gwoździa swoją drewnianą fajkę i chciał otworzyć okno, aby ją wyczyścić, gdy brzmiący wściekłością syk zmusił go do odwrócenia się.\n" +
-"\n" +
+
 "W drzwiach stał Lars. U jego nóg leżał ciemny kłębek z parą świecących plamek, a pośrodku izby Pilatus prężył grzbiet — dwaj wrogowie domowi spotkali się na spornym pasie granicznym.\n" +
-"\n" +
+
 "Przybysz był chudy, o szarej sierści w pręgi. Przebywał prawie wyłącznie w młynie, gdzie znajdował pod dostatkiem myszy i gdzie niekiedy na górnych piętrach mógł także upolować ptaszka. Dawniej Pilatus zajmował tę intratną posadę, ale niebawem po przybyciu Lizy sprzeniewierzył się młynowi i zamieszkał w kuchni. Wzajemna sympatia związała go z dziewczyną; dzięki jej opiece stał się tłusty i leniwy, a mysz mogła mu przebiec przed nosem, nie narażając się na większe niebezpieczeństwo. Potem pewnego razu pojawił się w młynie szary kocur i zagarnął go w swe posiadanie. Nikt nie wiedział, skąd przyszedł. Miał trudny, wyjątkowo nieprzystępny charakter, nie jadł nigdy z ręki. Dlatego też nie nadano mu ludzkiego imienia, jakim się mógł chlubić Pilatus, ale wołano go powszechnym nazwaniem Kizia.\n" +
-"\n" +
+
 "Żywił on wobec Pilatusa tę instynktowną nienawiść, jaką dzikie zwierzę, walczące o skromne pożywienie, okazuje oswojonemu, które poniża gatunek, otrzymując pokarm z ludzkiej łaski. A znowu Pilatus w poczuciu swego dostatku spoglądał z góry na Kizię, jak na marnego proletariusza, żyjącego z pracy rąk własnych. Zresztą spotykali się bardzo rzadko i tylko w tej izbie. Ponieważ mieściła się ona w młynie naprzeciw magazynu, gdzie Kizia miał swój najlepszy rewir łowiecki, i ponieważ także tutaj pokazywały się myszy, więc Kizia mógł zaliczać ją nie bez racji do swoich terytoriów. Ale pogląd Pilatusa był także poniekąd uzasadniony, gdyż mniemał on, że izba jako miejsce zamieszkane nie odpowiada pojęciu młyna, pojęciu, które zresztą najzupełniej szanował. Toteż gdy Liza niosła strawę młynarczykom do młyna, nie szedł za nią nigdy. Ale tutaj czuł się jeszcze u siebie w domu.\n" +
-"\n" +
+
 "— Patrzaj, jak zabawne są te dwa zwierzaki!\n" +
-"\n" +
+
 "Zaledwie Liza to wypowiedziała, koty skoczyły już na siebie. Liza wrzasnęła i zaczęła walić poduszką w rozszalałą parę — co było zgoła bezskuteczne. Nagle jednak Lars chwycił Kizię za kark i wyrzucił za drzwi, a gdy przeciwnik zniknął z widowni, Pilatus ukrył się pod łóżkiem.\n" +
-"\n" +
+
 "— Na Boga, że też odważyłeś się na to? — zawołała Liza. — Mógłby cię przecież strasznie pokaleczyć!\n" +
-"\n" +
+
 "— Kizia byłby wydrapał Pilatusowi oko, a ty gniewałabyś się na mnie z tego powodu — odpowiedział Lars dobrodusznie.\n" +
-"\n" +
+
 "— Dzielny jesteś chłopak… Pfe, ty paskudny Pilatusie, wstydź się!\n" +
-"\n" +
+
 "— Czy skończyłeś robotę na górze? — spytał Jörgen.\n" +
-"\n" +
+
 "— Tak.\n" +
 "\n";
 public static String tekstTestowy4 = "— A na dole?\n" +
-"\n" +
+
 "— Także.\n" +
-"\n" +
+
 "— No, zobaczymy — burknął Jörgen niedowierzająco.\n" +
-"\n" +
+
 "Lars jednak był tak dumny z tego, co uczynił, i z pochwały, jaką usłyszał z ust Lizy, że sposób traktowania go przez starszego parobka nie wywarł na nim zgoła żadnego wrażenia. Wsadził ręce do kieszeni i oparł się o ramę drzwi.\n" +
-"\n" +
+
 "„Tak, bardzo chętnie byś się mnie pozbył, ale ja stoję tutaj. Wydaje ci się, że piękna Liza cię lubi, ale czyś narażał swoją skórę, aby rozłączyć walczące koty?” — myślał Lars. Jörgen zmierzył go wściekłym spojrzeniem, które jednak nie odniosłoby skutku, nawet gdyby po drodze nie zagubiło się w mroku. Natomiast spojrzenie, jakim Liza obdarowała chłopca poprzez ramię — tymczasem bowiem słała drugie łóżko — dotarło szczęśliwie do celu. „Teraz spogląda na mnie! «Jest odważny» myśli o mnie. A może myśli także: «Chętnie ucałowałabym go za to»?”. Poczuł, że płoni się rumieńcem, i wzdrygnął się, gdy Liza przemówiła do niego.\n" +
-"\n" +
+
 "— Larsie — rzekła — schowałam dla ciebie kawałek chleba z masłem i z serem i trochę piwa. Jeżeli masz na nie ochotę, znajdziesz je w czeladnej kuchni.\n" +
-"\n" +
+
 "— Dziękuję ci, Lizo! — odparł Lars i wybiegł wzruszony do głębi tą troskliwością.\n" +
-"\n" +
+
 "„A to się Jörgen rozzłości! Do licha! Jestem u niej w wielkich łaskach!”\n" +
-"\n" +
+
 "„W ten sposób pozbyliśmy się go — pomyślał uradowany w duchu Jörgen. — Jak ona to sprytnie wymyśliła, aby pozostać ze mną sam na sam”.\n" +
-"\n" +
+
 "Ale mylili się obaj. Albowiem w rzeczywistości był to chleb z masłem, na który ona sama nie miała ochoty, a piwo zaczynało już kwaśnieć.\n" +
-"\n" +
-"\n" +
-"\n" +
-"IV\n" +
-"\n" +
+
 "Podczas gdy Lars w czeladnej kuchni spożywał z nabożeństwem tę ucztę będącą dowodem życzliwości i rozmawiał z Chrystianem, który zjadł już swoją polewkę, ale nie miał ochoty wstawać, Jörgen siedział przy oknie, palił fajkę i opowiadał Lizie te piękne historie, jakie wyczytał w kalendarzu. Liza usiadła na łóżku i przysłuchiwała się uważnie; kiedy niekiedy okrzykiem wyrażała zdziwienie, że potrafił przeczytać i zapamiętać wszystko.\n" +
-"\n" +
+
 "— A cóż się dalej stało? — spytała z napięciem.\n" +
-"\n" +
+
 "— Otóż dalej już nie przeczytałem, bo zapadł mrok.\n" +
-"\n" +
+
 "— To była zła dziewczyna.\n" +
-"\n" +
+
 "— O tak… ale poza tym jest bardzo sympatyczna, kiedy się o tym czyta.\n" +
-"\n" +
+
 "„Sympatyczna” — to było słowo, jakie zapamiętał z czytania. Lizę zdziwiło to wyrażenie, ale wydało się jej bardzo ładne, albowiem mogłoby i do niej się stosować.\n" +
-"\n" +
+
 "— Ale człowiek idzie za to do piekła.\n" +
-"\n" +
+
 "— Ta… a… k.\n" +
-"\n" +
+
 "Jörgen nie rozmyślał nigdy zbyt dokładnie o piekle, mimo woli jednak wyobrażał sobie kobiece jego mieszkanki jako brzydkie, stare baby, bez wyjątku brodate czarownice z bajki. Toteż zaniepokoiła go bardzo myśl, że tak wdzięczne stworzenie jak Metta mogłoby tam przebywać.\n" +
-"\n" +
+
 "— Ale tak było kiedyś, że ludzie byli bardzo źli — oświadczyła Liza, bębniąc nogami w podłogę.\n" +
-"\n" +
+
 "— O nie, Lizo, to zdarza się i teraz! Słyszałaś zapewne o *tej*, którą kat ściął w proboszczowskim lesie koło Tostrup? To przecież niedaleko od was.\n" +
-"\n" +
+
 "— Tak, słyszałam o takiej, która tam pono straszy.\n" +
-"\n" +
+
 "— O, to pewne. Mój ojciec widział ją kiedyś na własne oczy, gdy w jasną, księżycową noc musiał iść przez las.\n" +
-"\n" +
+
 "— Musiał? — powtórzyła Liza drażniącym tonem zapytania i pochyliła się naprzód, aby mógł zauważyć jej wyzywający uśmiech. — Czyżby wybrał się na niedozwolone łowy?\n" +
-"\n" +
+
 "— No tak — przyznał Jörgen — może i zdarzyło się, że ścigał jakiegoś rogacza… Nie będziesz chyba osądzać go zbyt surowo z tej przyczyny… Co, Lizo kłusowniczanko?\n" +
-"\n" +
+
 "— Jörgenie! — krzyknęła dziewczyna tonem pełnym wyrzutu, marszcząc brwi.\n" +
-"\n" +
+
 "— Nie gniewaj się, Lizo! Wiem, że nie lubisz tego, ale tak się jakoś złożyło przy tej sposobności, zrozum… U nas zdarzało się to zresztą tylko przypadkowo… ot, po prostu fuszerka.\n" +
-"\n" +
+
 "Liza skinęła głową, potwierdzając fakt, że bywają także przygodni złodzieje, a jednocześnie dziękując za kryjące się w tej uwadze pełne szacunku uznanie dla niej, córki rodziny Vibe, w której uprawiano kłusownictwo od szeregu pokoleń z zawodowym mistrzostwem. W słowach Jörgena brzmiało życzenie, by zaznaczyć pewien związek między obiema rodzinami, ale zarazem podkreślić skromnie nieporównaną wyższość rodziny Vibe. Ta delikatność zasługiwała na uznanie i została uznana.\n" +
-"\n" +
+
 "— Tak, więc to ten fuszer wchodził nam w drogę… i to nawet w proboszczowskim lesie!… Bądź co bądź było to trochę bezczelne! Hm… I wtedy zobaczył ją naprawdę?\n" +
-"\n" +
+
 "— Tak, najwyraźniej. Opisywał ją dokładnie, taką samą, jaką widział dziadek, kiedy ją tracono. Była tak piękna, że wszyscy płakali.\n" +
-"\n" +
+
 "— A cóż ona właściwie uczyniła złego?\n" +
-"\n" +
+
 "— Zamordowała swego narzeczonego, proboszcza, podawszy mu zatrute ciasto.\n" +
-"\n" +
+
 "— W takim razie przypuszczasz może, że ja karmię tę tam zatrutym ciastem?\n" +
-"\n" +
+
 "— Jezusie!… Nie mów tak, Lizo! Strach słuchać… zwłaszcza w ciemności.\n" +
-"\n" +
+
 "Liza zaśmiała się. Śmiech jej brzmiał krótko, twardo.\n" +
-"\n" +
+
 "Podniosła się, stanęła obok niego i wyjrzała przez okno. Okno było małe i nisko osadzone, więc aby tym wygodniej patrzyć, przechyliła się całkiem w kierunku Jörgena, tak że brodą dotykała prawie jego czoła, a ramię, wsparte dłonią na poręczy stoika, położyła mu na barkach. Nigdy jeszcze nie była tak blisko niego, ale za nic na świecie nie ośmieliłby się dotknąć jej swą pieszczotą. Czuł lęk przed nią, a ona wiedziała o tym — on zaś zdawał sobie sprawę, że ona to wie. Spoglądali oboje ku domowi. W ogródku przed domem błyszczały nikłe promienie światła, błądząc po gałęziach krzewów, kładąc się na ścieżkę i gubiąc się jako majaczący połysk w trawie. Promienie te wychodziły ze szczytowego okna, gdzie zasłona była zaciągnięta. Tam wewnątrz leżała umierająca chora.\n" +
-"\n" +
+
 "Nie. Liza nie zabijała młynarki. Co prawda przed miesiącem, kiedy się wydawało, że chora wyzdrowieje, przeszła jej przez głowę myśl, czyby nie można dopomóc chorobie, dodając coś do herbaty. Ale było to zbyt niebezpieczne, więc nie uczyniła tego. Jedynym środkiem, jaki mogłaby zdobyć, była trucizna na szczury, którą tak łatwo umiano by wykryć! Nie uczyniła tego, Bogu dzięki!… albowiem nie było to potrzebne. Teraz i tak dokona się to z całą pewnością. Proboszcz przyjechał… młynarka leżała wewnątrz i żegnała się ze światem. Nie, nie otruła tej kobiety… Czy jednak nie zatruła jej życia i czy nie utorowała jej przez to drogi do śmierci?… Ech, któż by śmiał ją obwiniać? Za to zresztą nie idzie człowiek od razu do piekła.\n" +
-"\n" +
+
 "Takie myśli krążyły w głowie Lizy, kiedy obserwowała nikłe promienie światła, przy którym gasło życie młynarki.\n" +
-"\n" +
+
 "Kiedy niekiedy, w regularnych odstępach, jakaś postać przesłaniała promienie, długi cień pełzał po trawie, to zbliżał się, to znowu oddalał. To młynarz, pełen niepokoju, chodził przed domem tam i z powrotem.\n" +
-"\n" +
+
 "Lękliwa ciekawość ogarnęła Jörgena: chciał zobaczyć, jak wygląda pochylona nad nim dziewczyna. Potarł zapałkę, udając, że zapala fajkę. Nagły blask uderzył w dolną część podbródka o gładkiej jak atłas skórze, rozbłysnął przelotnie na emalii zębów, purpurową czerwienią wdarł się do nosa i prześwietlił nozdrza, które drgały nerwowo podobnie jak u wietrzącego za śladem psa. Cień wystającej kości policzkowej pogłębił skroń, a oko cofnęło się do oczodołu, nad którym migotała niby złocisty płot zazwyczaj prawie niedostrzegalna brew. To oświetlenie z dołu, które wydobywało na jaw płaszczyzny zwykle ukryte, a przesłaniało cieniem inne, zazwyczaj najsilniej oświetlone, stwarzało poniekąd odwrotny obraz i pokazywało mu oblicze, w którym zaledwie mógł się doszukać znanych rysów i które dzięki tej na wpół poufałej obcości jednocześnie odpychało go i pociągało tajemniczo. A zwłaszcza teraz niepokoiło swą niesamowitością, gdy kolejno prawie całkiem znikało i znowu pojawiało się, coraz bardziej blade i upiorne — wyczarowywane i znowu przyćmiewane migocącym blaskiem zapałki, która upadła na podłogę, nie osiągnąwszy celu zapalenia fajki.\n" +
-"\n" +
+
 "— Jörgenie — szepnęła Liza — czy sądzisz, że można stamtąd z pokoju zobaczyć, co się dzieje tutaj w młynie?\n" +
-"\n" +
+
 "— Cóż przypuszczasz? Przecież oddzielają ściany.\n" +
-"\n" +
+
 "— Albo też usłyszeć?\n" +
-"\n" +
+
 "— Tak daleko?\n" +
-"\n" +
+
 "— Młynarz powiada, że to możliwe.\n" +
-"\n" +
+
 "— Zwariowałaś chyba, jeżeli w to wierzysz.\n" +
-"\n" +
+
 "— A jednak!… Kiedy młynarz mnie pocałował, ona wiedziała o tym i omal nie umarła z tego powodu, że już się jej wiele nie należy.\n" +
-"\n" +
+
 "— A więc młynarz całował cię?\n" +
-"\n" +
+
 "— Tak. Raz.\n" +
-"\n" +
+
 "— Czy to już dawno?\n" +
-"\n" +
+
 "— Nie tak bardzo dawno.\n" +
-"\n" +
+
 "— Mniej więcej przed miesiącem?\n" +
-"\n" +
+
 "— Czy może chcesz zapisać w kalendarzu? — zaśmiała się.\n" +
-"\n" +
+
 "Oboje milczeli przez parę chwil.\n" +
-"\n" +
+
 "Myśl o tym pocałunku wzburzyła Jörgena, gniewał się na nią, że opowiada o tym tak szczerze. Ale wprost nieznośny był ten pogardliwy spokój, z jakim pochylała się nad nim, jak gdyby była starą kobietą lub jak gdyby on nie był młodym, kochającym ją chłopakiem. Dlaczego jemu miało być wzbronione to, na co sobie młynarz pozwalał? I gasząc obcasem resztkę żaru nowej zapałki, postanowił otrząsnąć się z ciążącego na nim przymusu, otoczyć ją ramieniem i rozprawić się z nią energicznie, gdyby się broniła przeciwko jego pieszczotom.\n" +
-"\n" +
+
 "W tej samej chwili zabrzmiał w ogrodzie głos dziecięcy: „Ojcze!”.\n" +
-"\n" +
+
 "Liza wzdrygnęła się, wyprostowała i odstąpiła parę kroków.\n" +
-"\n" +
+
 "Sprzyjający moment przeminął nadaremnie, ale Jörgen nie doznawał rozczarowania, przeciwnie, czuł pewną ulgę. W ciemności ta bliskość pięknego, krzepkiego, kobiecego ciała, którego nie widział, lecz wyczuwał tylko niby ciśnienie powietrza, ciążyła na nim jak zmora; krew wrzała w żyłach. Teraz odetchnął. Ale jednocześnie ogarnął go nieokreślony lęk; wpełzł on do izby wraz z tym głosem dziecięcym, zbolałym i płaczliwym, który brzmiał mu jeszcze w uszach i oddziaływał na jego nastrój podobnie jak nocny krzyk sowy przed burzą.\n" +
-"\n" +
+
 "— Przecież to okropne dla dziecka — oświadczył nagle.\n" +
-"\n" +
+
 "— Jak to, okropne?\n" +
-"\n" +
+
 "— Myślę o tym, że straci matkę.\n" +
-"\n" +
+
 "— No tak, mój Boże! Takie biedne dziecko popłacze parę dni, potem zapomni.\n" +
-"\n" +
+
 "— To dziwne, Lizo, ale mnie się zdaje, że Janek cię nie cierpi.\n" +
-"\n" +
+
 "— Dlaczego miałby mnie nie cierpieć? — odpowiedziała w gniewie Liza. — Nie uczyniłam mu przecież nic złego, Bogu wiadomo.\n" +
-"\n" +
+
 "— Oczywiście, ale Janek jest właśnie niezwykłym dzieckiem. Czy wiesz, co zwróciło moją uwagę?\n" +
-"\n" +
+
 "— No?\n" +
-"\n" +
+
 "— Z początku, kiedy Karo się tu przybłąkał, Janek nie dbał wcale o niego. Ale pewnego dnia obiłaś psa miotłą i wypędziłaś z kuchni, i wtedy chłopiec zaczął go pieścić, bawił się z nim przez cały dzień, a od tego czasu są nierozłącznymi towarzyszami.\n" +
-"\n" +
+
 "— Bo obaj są głupimi stworzeniami.\n" +
-"\n" +
+
 "— Dlaczego właściwie jesteś nieżyczliwie usposobiona do Kara? To przecież całkiem porządny pies.\n" +
-"\n" +
-"— Kundel! Przewraca wszystko i rozpuszcza chmarę pcheł.\n" +
-"\n";
+
+"— Kundel! Przewraca wszystko i rozpuszcza chmarę pcheł.\n";
 public static String tekstTestowy5 = "— Tak, pcheł ma istotnie dużo — poświadczył Jörgen — ale to nie jego wina. A z czasem oduczy się także przewracać naczynia.\n" +
-"\n" +
+
 "— Nie, Pilatus i ja nie cierpimy Kara! Nie, nie cierpimy go… prawda, Pilatusie? — I ruchem nogi potoczyła po podłodze kota mruczącego przytwierdzająco.\n" +
-"\n" +
+
 "Jörgen potarł znowu zapałkę, tym razem naprawdę dlatego, aby zapalić fajkę. Potem pogrążył się w głębokim rozmyślaniu nad chaosem w młynarskim państwie, a myśli doprowadziły go do następującego wniosku:\n" +
-"\n" +
+
 "„Tak, gdyby Janek miał szesnaście lat zamiast sześciu, nic by zapewne nie przeszkodziło, żeby Liza załatwiła się z nim tak samo jak z innymi. Ale tak jak jest, zdaje mi się, że nie bez powodu obawia się go trochę”.\n" +
-"\n" +
-"\n" +
-"\n" +
-"V\n" +
-"\n" +
 "Młynarz przestał już chodzić wzdłuż szczytowej ściany.\n" +
-"\n" +
+
 "Usiadł na niskim kopcu w ogrodzie, a Janek, który przyzywał go tak trwożnie, stał obok niego. Oparł łokcie na ramionach ojca i wpatrywał się w jego twarz. Młynarz starał się okazać mu oblicze niezachmurzone troską.\n" +
-"\n" +
+
 "— Ojcze — pytał Janek — czy ludzie są bardzo chorzy, gdy proboszcz przychodzi do nich?\n" +
-"\n" +
+
 "— Czemuż by tak miało być? Przecież proboszcz przychodził i dawniej do mamy.\n" +
-"\n" +
+
 "— Czy mama nie była wówczas tak bardzo chora?\n" +
-"\n" +
+
 "Przepojona czułością miłość rodzicielska, pragnąca możliwie najdłużej oddalać smutek od tego dziecięcego serca, była dość czujna, by nie wpaść w pułapkę, jaką zastawił Janek, zadając to pytanie z nieuświadomioną przebiegłością, podyktowaną niepokojem.\n" +
-"\n" +
+
 "— Mama nie jest i teraz tak bardzo chora — odpowiedział. — Proboszcz lubi ją bardzo, ponieważ jest dobra i pobożna, dlatego też odwiedza ją tak często.\n" +
-"\n" +
+
 "— Wówczas jednak przychodził piechotą lub przyjeżdżał własnym wózkiem — zauważył Janek po krótkiej chwili namysłu, porównując z uporem dawniejsze odwiedziny proboszcza z obecnymi.\n" +
-"\n" +
+
 "Ojciec pogładził lekko główkę chłopca, nie znajdując odpowiedzi.\n" +
-"\n" +
+
 "— Ojcze — mówił Janek dalej — gdy proboszcz będzie odchodził, poprośmy go, niech błaga Pana Boga, aby nie zabierał nam mamy.\n" +
-"\n" +
+
 "— Proboszcz uczyni to jutro w kościele, a wtedy wszyscy obecni będą się modlić o to razem z nim.\n" +
-"\n" +
+
 "— A czy zabierzesz mnie także do kościoła?\n" +
-"\n" +
+
 "— Tak, moje dziecię.\n" +
-"\n" +
+
 "Chłopak położył głowę na kolanach ojca i milczał długo. Tymczasem młynarz rozważał, czym mógłby najlepiej rozerwać i ucieszyć Janka.\n" +
-"\n" +
+
 "— Słuchaj, Janku, po nabożeństwie w kościele pojedziemy przez las i odwiedzimy leśniczego… Oni z pewnością będą także w kościele, a w takim razie odwieziemy ich do domu… Czy przypominasz sobie dobrą ciotkę Hannę? Kochałeś ją bardzo, kiedy była tutaj i bawiła się z tobą… Ona piecze takie smaczne małe pierniki. Zobaczysz także tę sarenkę, o której opowiadałem ci, że przybiega do ręki, gdy się na nią woła…\n" +
-"\n" +
+
 "Janek nie objawiał wcale radości. Ojciec pochylił się nad nim. Chłopak zasnął.\n" +
-"\n" +
+
 "Była ciepła, wiosenna noc. Wiatr ucichł, jak gdyby także ułożył się do spoczynku, ponieważ nie trzeba już było wprawiać w ruch młyna. Nieruchome śmigi sterczały jak olbrzymi cień na tle zachodniego nieba, gdzie żółtawe światło o zielonawym odcieniu rozpływało się w miękkim, przytłumionym błękicie nocy. Tam, tuż nad najwyższym szczytem śmig, błyszczała gwiazda. Na dole, poza krzewami rozciągał się dom mieszkalny niby długi, ciemny wał. A całkiem nisko jaśniało także światło czerwieńsze i silniejsze aniżeli na niebie. Jak samotna para promieni przedzierało się poprzez krzywe pnie drzew owocowych i przenikało ku niemu. Nie był to ten sam blask, który widzieli Jörgen i Liza, a który raz po raz ciemniał wskutek niespokojnych kroków młynarza w tę i tamtą stronę. Ale i ten promień wychodził z tego samego źródła: pokój chorej znajdował się w narożniku domu i zdawało się, że bez przerwy wpija w młynarza swe świetlne oczy bez względu na to, czy młynarz wędrował między małymi grządkami ogródka, obramowanymi muszelkami, czy też ukrywał się w gęstwinie sadu — zdawało się, że ściga go palącym, gorączkowym spojrzeniem podobnym temu spojrzeniu, które ugodziło w niego, kiedy wychodził z pokoju, aby zostawić żonę sam na sam z proboszczem, a które napędziło mu wszystką krew do głowy niemym zapytaniem: „Czy idziesz teraz do niej?”.\n" +
-"\n" +
+
 "Spojrzenie to spłoniło go rumieńcem, chociaż nie zamyślał bynajmniej pójść do Lizy. Ach, gdyby to spojrzenie mogło przeniknąć w głąb jego serca, to ujrzałoby, jak daleka była w tej chwili myśl tęsknoty za tą dziewczyną. A jednak czyżby to było większą pociechą dla chorej, gdyby zobaczyła, że on się Lizy *obawia*? Czy w ogóle taka bojaźń mogła istnieć w sercu mężczyzny, którego żona prawdopodobnie nie przeżyje tej nocy? Tego był niemal pewny, ponieważ chora miała sama przeczucie zbliżającej się śmierci. Czy to rozpacz miłości z powodu grożącej utraty wypędziła go z pokoju chorej i gnała tu i tam jak niespokojnego ducha? Czy z tego powodu trzęsły mu się ręce, drżał głos, a wargi powtarzały bezradne, dziecięce zapytania i okrzyki: „Nie może umrzeć! Prawda, panie doktorze? Ona nie umrze? Pan ją uratuje!”. Niewątpliwie tkwiła w tym miłość męża, ale jeszcze silniej działała skrucha, poczucie własnej winy, wspomnienie tych chwil, kiedy to pytające spojrzenie: „Czy idziesz teraz do niej?” nie było bezpodstawne. Tkwiła w tym myśl o cierpieniach zazdrości, jakie dręczyły ją coraz silniej i doprowadzały do przekonania, że on jest bardziej winien, niż był w istocie. Tkwiło w tym wreszcie straszne przypuszczenie, że to dręczące podniecenie ducha stało się niebezpiecznym sprzymierzeńcem jej sercowej choroby i może dopomogło chorobie do przedwczesnego zwycięstwa.\n" +
-"\n" +
+
 "Ale przede wszystkim męczyła go obawa, co się z nim samym stanie. Wydawało mu się, że odchodzi od niego dobry domowy anioł stróż i że pozostawia go samego i bezbronnego jako łatwą zdobycz na pastwę złego czaru. Albowiem wiedział aż nazbyt dobrze, jak mocny wpływ wywiera na niego Liza, a także odczuwał instynktem, że ten wpływ w żadnym razie nie prowadzi do dobrego. Dopóki żyła żona, istniało jeszcze coś, co go powstrzymywało: mógł popełniać błędy, nawet trudne do naprawienia, ale nie był jeszcze bezradny, nie pozostawał całkowicie w mocy losu. Więc w tej wątłej życiowej nici, której włókna rwały się z minuty na minutę jedno po drugim, upatrywał jedyną linę kotwiczną. Ale z chwilą jej zerwania otwierało się nieznane, potężne morze, na którym groziły mu wszystkie burze namiętności.\n" +
-"\n" +
+
 "Co prawda i wówczas jeszcze pozostawała kotwica ratunkowa, nazbyt słaba, niestety, by ocalić przed rzeczywistym orkanem, ale bądź co bądź wystarczająca, by dać tymczasowo pewne uspokojenie. Nawet gdyby utracił żonę, miał jeszcze swego chłopaka. Umierająca pozostawiała mu część siebie samej, przypomnienie, że nie wyzbył się jeszcze obowiązków rodzinnych. I Jörgen wyczuł zupełnie trafnie, że Liza obawia się Janka, który dzięki niewinności swego dziecięcego wieku usuwał się spod jej mocy i mógłby także ojca wyzwolić spod tego wpływu. A młynarz, obawiający się Lizy, doznawał z tego powodu — nie zdając sobie z tego sprawy — dobroczynnej pewności siebie w obecności chłopca. Teraz ulegał także temu uczuciu, czuwając nad śpiącym dzieckiem.\n" +
-"\n" +
+
 "Wtem Janek począł oddychać niespokojnie i kwilić. Ręka ojca przesunęła się pieszczotliwie po jego główce. Chłopak przetarł oczy, westchnął i spojrzał ku gwiazdom błyszczącym ponad wierzchołkami drzew.\n" +
-"\n" +
+
 "— Co to, Jaśku? Płakałeś przez sen.\n" +
-"\n" +
+
 "— Wielki pies chciał mnie ukąsić…\n" +
-"\n" +
+
 "— Śniło ci się. Czas już do łóżka — rzekł młynarz, powstając. — Chodź, zawołamy Lizę, aby ci pomogła.\n" +
-"\n" +
+
 "— Nie, nie chcę Lizy!\n" +
 "\n";
 //"— Jesteś taki śpiący.\n" +
-//"\n" +
+//
 //"— Dam sobie sam radę, nie jestem wcale śpiący — bronił się Janek, prostując się i usiłując otrząsnąć się z senności. — Nie chcę Lizy — powtórzył z uporem.\n" +
 //"\n" +
 //"Młynarz spojrzał na niego zadziwiony.\n" +
