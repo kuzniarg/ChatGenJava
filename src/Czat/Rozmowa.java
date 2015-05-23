@@ -24,7 +24,8 @@ public class Rozmowa {
                          + "Wykonał: Grzegorz Kuźniarski (271 068, gr 1, Informatyka, Wydział Elektryczny)\n"
                          + "----------------------------------------------------------------\n\n";
         przywitaj += botInfo();
-        przywitaj += "Dzień dobry.\n\n";
+        przywitaj += "Dzień dobry. Jak minął Ci dzień?\n\n";
+        dodajDoStatystyki("Dzień dobry. Jak minął Ci dzień?");
         
         rozmowa = przywitaj;
         return rozmowa;
@@ -49,7 +50,6 @@ public class Rozmowa {
     }
     
     public static String wyslijWiadomosc(String wiadomosc){
-        String odpowiedz = null;
         if ("".equals(wiadomosc) || "\n".equals(wiadomosc))
             rozmowa += botNierozmowny() + "\n";
         else{
@@ -57,26 +57,24 @@ public class Rozmowa {
                 wiadomosc = wiadomosc.substring(0, wiadomosc.length()-1);
             rozmowa+= jaInfo();
             rozmowa += wiadomosc + "\n\n";
-            
-            odpowiedz = botOdpowiedz();
-            rozmowa += odpowiedz;
+            rozmowa += botOdpowiedz();
+            Baza.dodajDoBazy(wiadomosc);
         }
         rozmowa += "\n";
         
-        Baza.dodajDoBazy(wiadomosc);
-        dodajDoStatystyki(odpowiedz);
+        
         
         return rozmowa;
     }
     
     
     private static String botNierozmowny(){
-        String tekst = "";
-        tekst += botInfo();
+        String tekst = "", druk = "";
+        druk += botInfo();
         
         int los = 0;
         Random r = new Random();
-        los = Math.abs(r.nextInt()) % 7;
+        los = Math.abs(r.nextInt()) % 6;
         
         if (los == 0)
             tekst += "Czemu nic nie mówisz?";
@@ -90,16 +88,18 @@ public class Rozmowa {
             tekst += "Odezwij się.";
         else if (los == 5)
             tekst += "Porozmawiaj ze mną.";
-        else if (los == 6)
-            tekst += ":C";
+        dodajDoStatystyki(tekst);
+        druk += tekst;
         
-        return tekst;
+        return druk;
     }
     
     public static String botOdpowiedz(){
-        String tekst = "";
+        String tekst = "", odpowiedz = null;
         tekst += botInfo();
-        tekst += generujTekst() + "\n";
+        odpowiedz = generujTekst();
+        tekst += odpowiedz + "\n";
+        dodajDoStatystyki(odpowiedz);
         
         return tekst;
     }
