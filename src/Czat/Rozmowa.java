@@ -6,6 +6,7 @@
 package Czat;
 
 import static Czat.Baza.generujTekst;
+import static Czat.Statystyka.dodajDoStatystyki;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Random;
@@ -48,6 +49,7 @@ public class Rozmowa {
     }
     
     public static String wyslijWiadomosc(String wiadomosc){
+        String odpowiedz = null;
         if ("".equals(wiadomosc) || "\n".equals(wiadomosc))
             rozmowa += botNierozmowny() + "\n";
         else{
@@ -56,11 +58,13 @@ public class Rozmowa {
             rozmowa+= jaInfo();
             rozmowa += wiadomosc + "\n\n";
             
-            rozmowa += botOdpowiedz(wiadomosc);
+            odpowiedz = botOdpowiedz();
+            rozmowa += odpowiedz;
         }
         rozmowa += "\n";
         
-        
+        Baza.dodajDoBazy(wiadomosc);
+        dodajDoStatystyki(odpowiedz);
         
         return rozmowa;
     }
@@ -92,10 +96,10 @@ public class Rozmowa {
         return tekst;
     }
     
-    public static String botOdpowiedz(String probka){
+    public static String botOdpowiedz(){
         String tekst = "";
         tekst += botInfo();
-        tekst += generujTekst(probka) + "\n";
+        tekst += generujTekst() + "\n";
         
         return tekst;
     }

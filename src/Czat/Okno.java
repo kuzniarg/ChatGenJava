@@ -20,12 +20,12 @@ public class Okno extends javax.swing.JFrame {
 
     public static void main(String args[]) {
         Baza.baza = new ArrayList<>();
+        Statystyka.statystyka = new ArrayList<>();
         Baza.dodajDoBazy(Teksty.tekstTestowy1);
         Baza.dodajDoBazy(Teksty.tekstTestowy2);
         Baza.dodajDoBazy(Teksty.tekstTestowy3);
         Baza.dodajDoBazy(Teksty.tekstTestowy4);
         Baza.dodajDoBazy(Teksty.tekstTestowy5);
-        System.out.println("Baza pobrana");
         
         Okno oknoCzatu = new Okno();
         tekstCzat.setText(botPrzywitanie());

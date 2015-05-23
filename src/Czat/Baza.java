@@ -14,7 +14,7 @@ import java.util.Random;
  */
 public class Baza {
 
-    public static ArrayList<Element> baza;
+    public static ArrayList<BazaElement> baza;
     public static int N_gram = 4;
 
     public static void dodajDoBazy(String tekst) {
@@ -22,6 +22,9 @@ public class Baza {
         boolean petla = true;
         int warunek = -1;
 
+        if (prefiks == null || sufiks == null)
+            return;
+        
         while (petla) {
             for (int i = 0; i < baza.size(); i++) {
                 if (prefiks.equals(baza.get(i).prefiks)) {
@@ -34,7 +37,7 @@ public class Baza {
             if (warunek > 0) {
                 baza.get(warunek).dodajSufiks(sufiks);
             } else {
-                baza.add(new Element(prefiks, sufiks));
+                baza.add(new BazaElement(prefiks, sufiks));
             }
 
             pom = tekst.substring(tekst.indexOf(' ') + 1);
@@ -48,12 +51,12 @@ public class Baza {
         }
     }
 
-    public static String generujTekst(String probka) {
+    public static String generujTekst() {
         String tekst = "";
 
         Random r = new Random();
         int numer = Math.abs(r.nextInt()) % baza.size();
-        while ( !Character.isUpperCase(baza.get(numer).prefiks.charAt(0)) || baza.get(numer).prefiks.indexOf('.') != -1 ) {
+        while (!Character.isUpperCase(baza.get(numer).prefiks.charAt(0)) || baza.get(numer).prefiks.indexOf('.') != -1) {
             numer = Math.abs(r.nextInt()) % baza.size();
         }
 
@@ -69,16 +72,17 @@ public class Baza {
 
             pom = prefiks.substring(prefiks.indexOf(' ') + 1);
             prefiks = pom;
-            System.out.println(zdanie);
+
             numer = znajdzPrefiks(prefiks);
-            if (numer == -1)
+            if (numer == -1) {
                 zdanie += ".";
-            
-            if ( zdanie.contains(".") ) {
+            }
+
+            if (zdanie.contains(".") || zdanie.contains("!") || zdanie.contains("?")) {
                 i++;
                 tekst += zdanie + " ";
                 numer = Math.abs(r.nextInt()) % baza.size();
-                while ( !Character.isUpperCase(baza.get(numer).prefiks.charAt(0)) || baza.get(numer).prefiks.indexOf('.') != -1 ) {
+                while (!Character.isUpperCase(baza.get(numer).prefiks.charAt(0)) || baza.get(numer).prefiks.indexOf('.') != -1) {
                     numer = Math.abs(r.nextInt()) % baza.size();
                 }
                 zdanie = baza.get(numer).prefiks;
@@ -89,31 +93,79 @@ public class Baza {
     }
 
     private static String wyciagnijPrefiks(String tekst) {
-        String wyrazy = "";
-        String pom;
-        int spacja;
+        String prefiks = "";
+        char tablica[] = new char[tekst.length()];
+        int i = 0, j = 0, spacja;
 
-        for (int i = 0; i < N_gram - 1; i++) {
-            spacja = tekst.indexOf(" ");
-            if (spacja < 0) {
+        while (i < tekst.length()) {
+            if (Character.isLetter(tekst.charAt(i)) || tekst.charAt(i) == ' '
+                    || tekst.charAt(i) == '.' || tekst.charAt(i) == ','
+                    || tekst.charAt(i) == '!' || tekst.charAt(i) == '?') {
+                tablica[j] = tekst.charAt(i);
+                j++;
+            }
+            if (tekst.charAt(i) == '\n'){
+                tablica[j] = ' ';
+                j++;
+            }
+            
+            i++;
+        }
+
+        for (i = 0; i < N_gram - 1; i++) {
+            j = 0;
+            spacja = -1;
+            while (j < tekst.length()){
+                if (tablica[j] == ' '){
+                    spacja = j;
+                    tablica[spacja] = '@';
+                    break;
+                }
+                j++;
+            }
+            if (i == tekst.length() || spacja == -1) {
                 return null;
             }
-            wyrazy += tekst.substring(0, spacja);
-
-            pom = tekst.substring(spacja + 1);
-            tekst = pom;
-            if (i != N_gram - 2) {
-                wyrazy += " ";
+            
+            if (i == N_gram - 2) {
+                tablica[spacja] = '#';
             }
         }
-        return wyrazy;
+        i=0;
+        while (i < tekst.length()) {
+            
+            if (tablica[i] == '@') {
+                tablica[i] = ' ';
+            }
+            if (tablica[i] == '#') {
+                break;
+            }
+            prefiks += tablica[i];
+            i++;
+        }
+        return prefiks;
     }
 
     private static String wyciagnijSufiks(String tekst) {
         String sufiks = "";
-        char tablica[] = tekst.toCharArray();
-        int j = 0, i;
-
+        char tablica[] = new char[tekst.length()];
+        int j = 0, i=0;
+        
+        while (i < tekst.length()) {
+            if (Character.isLetter(tekst.charAt(i)) || tekst.charAt(i) == ' '
+                    || tekst.charAt(i) == '.' || tekst.charAt(i) == ','
+                    || tekst.charAt(i) == '!' || tekst.charAt(i) == '?') {
+                tablica[j] = tekst.charAt(i);
+                j++;
+            }
+            if (tekst.charAt(i) == '\n'){
+                tablica[j] = ' ';
+                j++;
+            }   
+            i++;
+        }
+        
+        j=0;
         for (i = 0; i < N_gram - 1; i++) {
             while (tablica[j] != ' ') {
                 tablica[j++] = '#';
@@ -167,13 +219,15 @@ public class Baza {
     private static int znajdzPrefiks(String prefiks) {
         int indeks = 0;
 
-        while ( indeks < baza.size() ) {
-            if ( prefiks.equals(baza.get(indeks).prefiks) )
+        while (indeks < baza.size()) {
+            if (prefiks.equals(baza.get(indeks).prefiks)) {
                 break;
+            }
             indeks++;
         }
-        if (indeks == baza.size())
+        if (indeks == baza.size()) {
             return -1;
+        }
         return indeks;
     }
 }

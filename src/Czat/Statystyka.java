@@ -5,10 +5,17 @@
  */
 package Czat;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Grzechu
  */
 public class Statystyka {
+    public static ArrayList<StatystykaElement> statystyka;
+    public static int ileRazem = 0;
     
+    public static void dodajDoStatystyki (String tekst){
+        
+    }
 }

@@ -13,11 +13,11 @@ import java.util.Random;
  *
  * @author Grzechu
  */
-public class Element {
+public class BazaElement {
     String prefiks;
     public ArrayList<String> sufiks;
 
-    public Element(String prefiks, String sufiks) {
+    public BazaElement(String prefiks, String sufiks) {
         this.sufiks = new ArrayList<>();
         
         this.prefiks = prefiks;
