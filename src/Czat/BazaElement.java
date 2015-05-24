@@ -5,7 +5,6 @@
  */
 package Czat;
 
-import static Czat.Baza.baza;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -15,7 +14,7 @@ import java.util.Random;
  */
 public class BazaElement {
     String prefiks;
-    public ArrayList<String> sufiks;
+    ArrayList<String> sufiks;
 
     public BazaElement(String prefiks, String sufiks) {
         this.sufiks = new ArrayList<>();

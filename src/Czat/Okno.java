@@ -5,10 +5,10 @@
  */
 package Czat;
 
-import static Czat.Baza.dodajDoBazy;
 import static Czat.Rozmowa.botPrzywitanie;
 import static Czat.Rozmowa.wyslijWiadomosc;
 import java.util.ArrayList;
+import javax.swing.JFileChooser;
 
 /**
  *
@@ -17,16 +17,11 @@ import java.util.ArrayList;
 public class Okno extends javax.swing.JFrame {
 
     boolean pierwszyTekst = true;
+    JFileChooser fc;
 
     public static void main(String args[]) {
         Baza.baza = new ArrayList<>();
         Statystyka.statystyka = new ArrayList<>();
-        Baza.dodajDoBazy(Teksty.tekstTestowy1);
-        Baza.dodajDoBazy(Teksty.tekstTestowy2);
-        Baza.dodajDoBazy(Teksty.tekstTestowy3);
-        Baza.dodajDoBazy(Teksty.tekstTestowy4);
-        Baza.dodajDoBazy(Teksty.tekstTestowy5);
-        
         Okno oknoCzatu = new Okno();
         tekstCzat.setText(botPrzywitanie());
         tekstWpisz.setText("Wpisz tekst");
@@ -199,15 +194,15 @@ public class Okno extends javax.swing.JFrame {
                         .addComponent(statystyka, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(35, 35, 35)
                         .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
+                        .addGap(12, 12, 12)
                         .addComponent(progresStaty1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(28, 28, 28)
                         .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(8, 8, 8)
+                        .addGap(12, 12, 12)
                         .addComponent(progresStaty2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(28, 28, 28)
                         .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(8, 8, 8)
+                        .addGap(12, 12, 12)
                         .addComponent(progresStaty3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -242,7 +237,7 @@ public class Okno extends javax.swing.JFrame {
     }//GEN-LAST:event_tekstWpiszKeyTyped
 
     private void dodajPlikButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dodajPlikButtonActionPerformed
-        dodajDoBazy("Na początek bardzo bananalny tekst ćwiczeniowy. Na początek niepotrzebny jest tekst skomplikowany. Na górze róże, na dole fiołki, ale początek i koniec skomplikowany.");
+        OknoPlik.main(null);
     }//GEN-LAST:event_dodajPlikButtonActionPerformed
 
     /**

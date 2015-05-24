@@ -86,13 +86,11 @@ public class Statystyka {
             i++;
         }
         if (i == statystyka.size()) {
-            statystyka.add(new StatystykaElement(wyraz, 1));
+            statystyka.add(new StatystykaElement(wyraz));
         }
     }
 
     private static void aktualizujStatystyki() {
-        statystyka.sort(null);
-        statystyka.sort(null);
         statystyka.sort(null);
         if (statystyka.get(0).wyraz.length() > 1)
             wyrazStaty1.setText(Character.toUpperCase(statystyka.get(0).wyraz.charAt(0)) + statystyka.get(0).wyraz.substring(1) + " - " + statystyka.get(0).ileRazy);

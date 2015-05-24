@@ -13,9 +13,9 @@ public class StatystykaElement implements Comparable<StatystykaElement>{
     public String wyraz;
     public int ileRazy;
     
-    public StatystykaElement (String wyraz, int ileRazy){
+    public StatystykaElement (String wyraz){
         this.wyraz = wyraz;
-        this.ileRazy = ileRazy;
+        this.ileRazy = 1;
     }
     
     @Override

@@ -24,8 +24,9 @@ public class Rozmowa {
                          + "Wykonał: Grzegorz Kuźniarski (271 068, gr 1, Informatyka, Wydział Elektryczny)\n"
                          + "----------------------------------------------------------------\n\n";
         przywitaj += botInfo();
-        przywitaj += "Dzień dobry. Jak minął Ci dzień?\n\n";
-        dodajDoStatystyki("Dzień dobry. Jak minął Ci dzień?");
+        przywitaj += "Dzień dobry. Nazywam się Gniewomir i jestem botem, który będzie miał przyjemność poprowadzić z Tobą rozmowę. Jak minął Ci dzień?\n\n";
+        dodajDoStatystyki("Dzień dobry. Nazywam się Gniewomir i jestem botem, który będzie miał przyjemność poprowadzić z Tobą rozmowę. Jak minął Ci dzień?");
+        Baza.dodajDoBazy("Dzień dobry. Nazywam się Gniewomir i jestem botem, który będzie miał przyjemność poprowadzić z Tobą rozmowę. Jak minął Ci dzień?");
         
         rozmowa = przywitaj;
         return rozmowa;
