@@ -92,7 +92,7 @@ public class Baza {
         return tekst;
     }
 
-    private static String wyciagnijPrefiks(String tekst) {
+    public static String wyciagnijPrefiks(String tekst) {
         String prefiks = "";
         char tablica[] = new char[tekst.length()];
         int i = 0, j = 0, spacja;
@@ -146,7 +146,7 @@ public class Baza {
         return prefiks;
     }
 
-    private static String wyciagnijSufiks(String tekst) {
+    public static String wyciagnijSufiks(String tekst) {
         String sufiks = "";
         char tablica[] = new char[tekst.length()];
         int j = 0, i=0;
@@ -204,19 +204,7 @@ public class Baza {
         return sufiks;
     }
 
-    public static String druk() {
-        StringBuilder wydruk = new StringBuilder();
-        for (int i = 0; i < baza.size(); i++) {
-            wydruk.append(baza.get(i).prefiks).append(": ").append(baza.get(i).sufiks.size()).append(" sufiksy -> ");
-            for (int j = 0; j < baza.get(i).sufiks.size(); j++) {
-                wydruk.append(baza.get(i).sufiks.get(j)).append(", ");
-            }
-            wydruk.append("\n");
-        }
-        return wydruk.toString();
-    }
-
-    private static int znajdzPrefiks(String prefiks) {
+    public static int znajdzPrefiks(String prefiks) {
         int indeks = 0;
 
         while (indeks < baza.size()) {
