@@ -18,7 +18,7 @@ import java.io.IOException;
  */
 public class Pliki {
 
-    public static boolean wczytajPlik(File plik) throws FileNotFoundException, IOException {
+    public static void wczytajPlik(File plik) throws FileNotFoundException, IOException {
         FileReader fileReader = new FileReader(plik);
         BufferedReader bufferReader = new BufferedReader(fileReader);
         String linia, tekst = "";
@@ -27,6 +27,5 @@ public class Pliki {
         }
         fileReader.close();
         dodajDoBazy(tekst);
-        return true;
     }
 }

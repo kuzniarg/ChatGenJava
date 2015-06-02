@@ -237,7 +237,7 @@ public class Okno extends javax.swing.JFrame {
     }//GEN-LAST:event_tekstWpiszKeyTyped
 
     private void dodajPlikButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dodajPlikButtonActionPerformed
-        OknoPlik.main(null);
+        OknoPlik.OknoPlikStart();
     }//GEN-LAST:event_dodajPlikButtonActionPerformed
 
     /**
