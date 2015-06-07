@@ -43,13 +43,13 @@ public class OknoPlik extends JPanel implements ActionListener {
             log.append("Otwieranie pliku: " + plik.getName() + ".\n");
             try {
                 wczytajPlik(plik);
-                log.append("Dodano do bazy.");
+                log.append("Dodano do bazy.\n");
             } catch (FileNotFoundException ex) {
                 Logger.getLogger(OknoPlik.class.getName()).log(Level.SEVERE, null, ex);
-                log.append("Błąd podczas dodawania do bazy.");
+                log.append("Błąd podczas dodawania do bazy.\n");
             } catch (IOException ex) {
                 Logger.getLogger(OknoPlik.class.getName()).log(Level.SEVERE, null, ex);
-                log.append("Błąd podczas dodawania do bazy.");
+                log.append("Błąd podczas dodawania do bazy.\n");
             }
         }
         log.setCaretPosition(log.getDocument().getLength());
