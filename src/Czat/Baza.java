@@ -15,7 +15,8 @@ import java.util.Random;
 public class Baza {
 
     public static ArrayList<BazaElement> baza;
-    public static int N_gram = 3;
+    public static int N_gram;
+    static String Imie;
 
     public static void dodajDoBazy(String tekst) {
         String prefiks = wyciagnijPrefiks(tekst), sufiks = wyciagnijSufiks(tekst), pom;

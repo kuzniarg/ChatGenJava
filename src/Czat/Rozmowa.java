@@ -45,7 +45,7 @@ public class Rozmowa {
         String info = "";
         SimpleDateFormat godzina = new SimpleDateFormat("kk:mm:ss");
         info += godzina.format(new Date());
-        info+= "  Ja\n";
+        info+= "  " + Baza.Imie;
         
         return info;
     }

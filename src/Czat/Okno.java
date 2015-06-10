@@ -7,6 +7,7 @@ package Czat;
 
 import static Czat.Rozmowa.botPrzywitanie;
 import static Czat.Rozmowa.wyslijWiadomosc;
+import java.awt.Color;
 import java.util.ArrayList;
 
 /**
@@ -20,9 +21,12 @@ public class Okno extends javax.swing.JFrame {
     public static void main(String args[]) {
         Baza.baza = new ArrayList<>();
         Statystyka.statystyka = new ArrayList<>();
+        
+        Baza.Imie = args[0];
+        Baza.N_gram = Integer.parseInt(args[1]);
         Okno oknoCzatu = new Okno();
         tekstCzat.setText(botPrzywitanie());
-        tekstWpisz.setText("Wpisz tekst");
+        tekstWpisz.setText("Wpisz tekst.");
     }
 
     public Okno() {
@@ -61,6 +65,7 @@ public class Okno extends javax.swing.JFrame {
         jScrollPane1.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane1.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
 
+        tekstCzat.setBackground(new java.awt.Color(255, 255, 255));
         tekstCzat.setColumns(20);
         tekstCzat.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
         tekstCzat.setLineWrap(true);
@@ -120,6 +125,7 @@ public class Okno extends javax.swing.JFrame {
         jScrollPane3.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
         jScrollPane3.setPreferredSize(new java.awt.Dimension(280, 100));
 
+        wyrazStaty1.setBackground(new java.awt.Color(255, 255, 255));
         wyrazStaty1.setColumns(20);
         wyrazStaty1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         wyrazStaty1.setRows(5);
@@ -208,7 +214,14 @@ public class Okno extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void wyslijButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wyslijButtonActionPerformed
-        tekstCzat.setText(wyslijWiadomosc(tekstWpisz.getText()));
+        String tekst = tekstWpisz.getText();
+        int dl = tekst.length();
+        if (tekst.charAt(dl-2) != '.'
+            && tekst.charAt(dl-2) != '!'
+            && tekst.charAt(dl-2) != '?')
+            tekst = tekst.substring(0, dl-2) + "\n";
+        System.out.println(tekst);
+        tekstCzat.setText(wyslijWiadomosc(tekst));
         tekstWpisz.setText(null);
     }//GEN-LAST:event_wyslijButtonActionPerformed
 
