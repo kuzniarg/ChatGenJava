@@ -5,9 +5,12 @@
  */
 package Czat;
 
+import static Czat.Baza.N_gram;
 import static Czat.Rozmowa.botPrzywitanie;
 import static Czat.Rozmowa.wyslijWiadomosc;
-import java.awt.Color;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 
 /**
@@ -18,20 +21,20 @@ public class Okno extends javax.swing.JFrame {
 
     boolean pierwszyTekst = true;
 
-    public static void main(String args[]) {
-        Baza.baza = new ArrayList<>();
-        Statystyka.statystyka = new ArrayList<>();
-        
-        Baza.Imie = args[0];
-        Baza.N_gram = Integer.parseInt(args[1]);
-        Okno oknoCzatu = new Okno();
-        tekstCzat.setText(botPrzywitanie());
-        tekstWpisz.setText("Wpisz tekst.");
-    }
-
-    public Okno() {
+    public Okno(String args[]) throws IOException {
         initComponents();
         initOkno();
+
+        Baza.baza = new ArrayList<>();
+        Statystyka.statystyka = new ArrayList<>();
+
+        Baza.Imie = args[0];
+        Baza.N_gram = Integer.parseInt(args[1]);
+        
+        tekstCzat.setText(botPrzywitanie());
+        tekstWpisz.setText("Wpisz tekst.");
+        
+        Baza.wczytajBaze();
     }
 
     /**
@@ -61,11 +64,15 @@ public class Okno extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Symulator czatu");
         setMinimumSize(new java.awt.Dimension(10, 10));
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowClosing(java.awt.event.WindowEvent evt) {
+                zapisBazy(evt);
+            }
+        });
 
         jScrollPane1.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane1.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
 
-        tekstCzat.setBackground(new java.awt.Color(255, 255, 255));
         tekstCzat.setColumns(20);
         tekstCzat.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
         tekstCzat.setLineWrap(true);
@@ -125,7 +132,6 @@ public class Okno extends javax.swing.JFrame {
         jScrollPane3.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
         jScrollPane3.setPreferredSize(new java.awt.Dimension(280, 100));
 
-        wyrazStaty1.setBackground(new java.awt.Color(255, 255, 255));
         wyrazStaty1.setColumns(20);
         wyrazStaty1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         wyrazStaty1.setRows(5);
@@ -216,11 +222,11 @@ public class Okno extends javax.swing.JFrame {
     private void wyslijButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wyslijButtonActionPerformed
         String tekst = tekstWpisz.getText();
         int dl = tekst.length();
-        if (tekst.charAt(dl-2) != '.'
-            && tekst.charAt(dl-2) != '!'
-            && tekst.charAt(dl-2) != '?')
-            tekst = tekst.substring(0, dl-2) + "\n";
-        System.out.println(tekst);
+        if (tekstWpisz.getText().length() > 0) {
+            if (tekst.charAt(dl - 1) != '.' && tekst.charAt(dl - 1) != '!' && tekst.charAt(dl - 1) != '?') {
+                tekst += ".";
+            }
+        }
         tekstCzat.setText(wyslijWiadomosc(tekst));
         tekstWpisz.setText(null);
     }//GEN-LAST:event_wyslijButtonActionPerformed
@@ -234,6 +240,7 @@ public class Okno extends javax.swing.JFrame {
 
     private void tekstWpiszKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tekstWpiszKeyTyped
         if (evt.getKeyChar() == '\n') {
+            tekstWpisz.setText(tekstWpisz.getText().substring(0, tekstWpisz.getText().length() - 1));
             wyslijButton.doClick();
         }
 
@@ -242,6 +249,31 @@ public class Okno extends javax.swing.JFrame {
     private void dodajPlikButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dodajPlikButtonActionPerformed
         OknoPlik.OknoPlikStart();
     }//GEN-LAST:event_dodajPlikButtonActionPerformed
+
+    private void zapisBazy(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_zapisBazy
+        String[] linie = Baza.zapiszBaze();
+        FileWriter fw = null;
+
+        try {
+            fw = new FileWriter("src\\Dane\\Baza_" + N_gram + ".txt");
+        } catch (IOException e) {
+        }
+
+        BufferedWriter bw = new BufferedWriter(fw);
+        try {
+            for (String linie1 : linie) {
+                bw.write(linie1);
+                bw.newLine();
+            }
+        } catch (IOException e) {
+        }
+
+        try {
+            bw.close();
+            fw.close();
+        } catch (IOException e) {
+        }
+    }//GEN-LAST:event_zapisBazy
 
     /**
      * @param args the command line arguments

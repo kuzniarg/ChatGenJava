@@ -5,6 +5,11 @@
  */
 package Czat;
 
+import java.awt.Color;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author grzechu
@@ -71,7 +76,7 @@ public class OknoStart extends javax.swing.JFrame {
             }
         });
 
-        wyborNGramu.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "2", "3", "4", "5", "6", "7", "8" }));
+        wyborNGramu.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "3", "4", "5", "6", "7", "8" }));
         wyborNGramu.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 wyborNGramuActionPerformed(evt);
@@ -129,7 +134,11 @@ public class OknoStart extends javax.swing.JFrame {
             String dane[] = new String[2];
             dane[0] = PoleImie.getText();
             dane[1] = wyborNGramu.getModel().getSelectedItem().toString();
-            Okno.main(dane);
+            try {
+                Okno startCzat = new Okno(dane);
+            } catch (IOException ex) {
+                Logger.getLogger(OknoStart.class.getName()).log(Level.SEVERE, null, ex);
+            }
         }
     }//GEN-LAST:event_ButtonOKActionPerformed
 
@@ -143,10 +152,10 @@ public class OknoStart extends javax.swing.JFrame {
 
     private void PoleImieKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_PoleImieKeyTyped
         if (evt.getKeyChar() == '\n') {
-            if (PoleImie.getText().length() > 1)
+            PoleImie.setText(PoleImie.getText().substring(0, PoleImie.getText().length()-1));
+            
+            if (PoleImie.getText().length() > 0)
                 ButtonOK.doClick();
-            else
-                PoleImie.setText(PoleImie.getText().substring(0, PoleImie.getText().length()-1));
         }
     }//GEN-LAST:event_PoleImieKeyTyped
 

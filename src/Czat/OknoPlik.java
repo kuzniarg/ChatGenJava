@@ -23,7 +23,7 @@ public class OknoPlik extends JPanel implements ActionListener {
         log.setEditable(false);
         JScrollPane logScrollPane = new JScrollPane(log);
 
-        fc = new JFileChooser();
+        fc = new JFileChooser(".\\src\\Teksty");
 
         dodajPlikButton = new JButton("Wybierz plik");
         dodajPlikButton.addActionListener(this);

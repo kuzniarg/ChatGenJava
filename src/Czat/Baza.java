@@ -5,6 +5,10 @@
  */
 package Czat;
 
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -23,9 +27,10 @@ public class Baza {
         boolean petla = true;
         int warunek = -1;
 
-        if (prefiks == null || sufiks == null)
+        if (prefiks == null || sufiks == null) {
             return;
-        
+        }
+
         while (petla) {
             for (int i = 0; i < baza.size(); i++) {
                 if (prefiks.equals(baza.get(i).prefiks)) {
@@ -105,19 +110,19 @@ public class Baza {
                 tablica[j] = tekst.charAt(i);
                 j++;
             }
-            if (tekst.charAt(i) == '\n'){
+            if (tekst.charAt(i) == '\n') {
                 tablica[j] = ' ';
                 j++;
             }
-            
+
             i++;
         }
 
         for (i = 0; i < N_gram - 1; i++) {
             j = 0;
             spacja = -1;
-            while (j < tekst.length()){
-                if (tablica[j] == ' '){
+            while (j < tekst.length()) {
+                if (tablica[j] == ' ') {
                     spacja = j;
                     tablica[spacja] = '@';
                     break;
@@ -127,14 +132,14 @@ public class Baza {
             if (i == tekst.length() || spacja == -1) {
                 return null;
             }
-            
+
             if (i == N_gram - 2) {
                 tablica[spacja] = '#';
             }
         }
-        i=0;
+        i = 0;
         while (i < tekst.length()) {
-            
+
             if (tablica[i] == '@') {
                 tablica[i] = ' ';
             }
@@ -150,8 +155,8 @@ public class Baza {
     public static String wyciagnijSufiks(String tekst) {
         String sufiks = "";
         char tablica[] = new char[tekst.length()];
-        int j = 0, i=0;
-        
+        int j = 0, i = 0;
+
         while (i < tekst.length()) {
             if (Character.isLetter(tekst.charAt(i)) || tekst.charAt(i) == ' '
                     || tekst.charAt(i) == '.' || tekst.charAt(i) == ','
@@ -159,14 +164,14 @@ public class Baza {
                 tablica[j] = tekst.charAt(i);
                 j++;
             }
-            if (tekst.charAt(i) == '\n'){
+            if (tekst.charAt(i) == '\n') {
                 tablica[j] = ' ';
                 j++;
-            }   
+            }
             i++;
         }
-        
-        j=0;
+
+        j = 0;
         for (i = 0; i < N_gram - 1; i++) {
             while (tablica[j] != ' ') {
                 tablica[j++] = '#';
@@ -218,5 +223,61 @@ public class Baza {
             return -1;
         }
         return indeks;
+    }
+
+    static String[] zapiszBaze() {
+        String[] wynik = new String[baza.size()];
+
+        for (int i = 0; i < baza.size(); i++) {
+            wynik[i] = baza.get(i).toString();
+        }
+
+        return wynik;
+    }
+
+    static void wczytajBaze() throws FileNotFoundException, IOException {
+        FileReader fileReader = new FileReader("src\\Dane\\Baza_" + N_gram + ".txt");
+        BufferedReader bufferReader = new BufferedReader(fileReader);
+        String linia;
+        while ((linia = bufferReader.readLine()) != null) {
+            String prefiks = linia.substring(0, linia.indexOf('|'));
+            ArrayList<String> sufiks = new ArrayList<>();
+
+            int i = linia.indexOf('|') + 1;
+            int j = i;
+            while (i < linia.length()) {
+                if (linia.charAt(i) == ' ') {
+                    sufiks.add(linia.substring(j, i));
+                    j = i + 1;
+                }
+                i++;
+            }
+
+            wczytajDoBazy(prefiks, sufiks);
+        }
+    }
+
+    private static void wczytajDoBazy(String prefiks, ArrayList<String> sufiks) {
+        int i = 0, j = 0, k = 0;
+        while (i < baza.size()) {
+            if (prefiks.equals(baza.get(i).prefiks)) {
+                while (j < sufiks.size()) {
+                    while (k < baza.get(i).sufiks.size()) {
+                        if (!sufiks.get(j).equals(baza.get(i).sufiks.get(k))) {
+                            k++;
+                        } else {
+                            k = 0;
+                            break;
+                        }
+                    }
+                    if (k > 0)
+                        baza.get(i).dodajSufiks(sufiks.get(j));
+                    j++;
+                    k = 0;
+                }
+                j = 0;
+            }
+            i++;
+        }
     }
 }
