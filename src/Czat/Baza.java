@@ -252,15 +252,17 @@ public class Baza {
                 }
                 i++;
             }
-
+            
             wczytajDoBazy(prefiks, sufiks);
         }
     }
 
     private static void wczytajDoBazy(String prefiks, ArrayList<String> sufiks) {
         int i = 0, j = 0, k = 0;
+        boolean jest = false;
         while (i < baza.size()) {
             if (prefiks.equals(baza.get(i).prefiks)) {
+                jest = true;
                 while (j < sufiks.size()) {
                     while (k < baza.get(i).sufiks.size()) {
                         if (!sufiks.get(j).equals(baza.get(i).sufiks.get(k))) {
@@ -270,8 +272,10 @@ public class Baza {
                             break;
                         }
                     }
-                    if (k > 0)
+                    if (k > 0) {
                         baza.get(i).dodajSufiks(sufiks.get(j));
+                        return;
+                    }
                     j++;
                     k = 0;
                 }
@@ -279,5 +283,12 @@ public class Baza {
             }
             i++;
         }
+        if (i >= baza.size() && !jest && sufiks.get(0).length() > 0){
+            baza.add(new BazaElement(prefiks, sufiks));
+            System.out.println(prefiks + " " + sufiks);
+        }
+        
+        
+        
     }
 }

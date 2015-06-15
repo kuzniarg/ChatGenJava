@@ -20,3 +20,5 @@ Witam. Bardzo|ładna
 Bardzo ładna|pogoda 
 Bardzo dobrze,|dziękuję 
 Masz ochotę|porozmawiać 
+Cześć. Jak|się 
+Jak się|masz 

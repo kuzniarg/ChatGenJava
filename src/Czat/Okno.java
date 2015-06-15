@@ -24,7 +24,7 @@ public class Okno extends javax.swing.JFrame {
     public Okno(String args[]) throws IOException {
         initComponents();
         initOkno();
-
+              
         Baza.baza = new ArrayList<>();
         Statystyka.statystyka = new ArrayList<>();
 
@@ -78,10 +78,11 @@ public class Okno extends javax.swing.JFrame {
         tekstCzat.setLineWrap(true);
         tekstCzat.setRows(5);
         tekstCzat.setDisabledTextColor(new java.awt.Color(0, 0, 0));
+        tekstCzat.setBackground(new java.awt.Color(255, 255, 255));
         tekstCzat.setEnabled(false);
         jScrollPane1.setViewportView(tekstCzat);
-        tekstCzat.setWrapStyleWord(true);
 
+        jScrollPane2.setBackground(new java.awt.Color(5, 67, 150));
         jScrollPane2.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane2.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
@@ -303,5 +304,6 @@ public class Okno extends javax.swing.JFrame {
         setResizable(false);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
+        tekstCzat.setWrapStyleWord(true);
     }
 }
