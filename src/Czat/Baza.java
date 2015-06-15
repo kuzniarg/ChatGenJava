@@ -252,7 +252,7 @@ public class Baza {
                 }
                 i++;
             }
-            
+
             wczytajDoBazy(prefiks, sufiks);
         }
     }
@@ -283,12 +283,9 @@ public class Baza {
             }
             i++;
         }
-        if (i >= baza.size() && !jest && sufiks.get(0).length() > 0){
+        if (i >= baza.size() && !jest && sufiks.get(0).length() > 0) {
             baza.add(new BazaElement(prefiks, sufiks));
-            System.out.println(prefiks + " " + sufiks);
         }
-        
-        
-        
+
     }
 }
